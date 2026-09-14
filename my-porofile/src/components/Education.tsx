@@ -1,8 +1,10 @@
 import { GraduationCap } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
+import { formation } from "../data/formation";
 
 export default function Education() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
+  const items = formation[lang].items;
 
   return (
     <section className="section education" id="formation">
@@ -17,7 +19,7 @@ export default function Education() {
           <GraduationCap size={20} /> {t.formation.columnTitle}
         </h3>
         <div className="timeline">
-          {t.formation.items.map((edu) => (
+          {items.map((edu) => (
             <article key={edu.degree} className="timeline__item">
               <div className="timeline__point" />
               <div className="timeline__card">

@@ -71,65 +71,6 @@ export const es: Translation = {
   skills: {
     label: "Tecnologías y experiencia",
     title: "Mis habilidades técnicas",
-    categories: [
-      {
-        title: "Backend",
-        description: "Desarrollo y seguridad de APIs REST y aplicaciones backend.",
-        skills: [
-          "Java",
-          "Spring Boot",
-          "Spring Security",
-          "JPA / Hibernate",
-          "Python",
-          "FastAPI",
-          "Laravel",
-          "ASP.NET Core",
-          "Node.js",
-        ],
-      },
-      {
-        title: "Frontend",
-        description: "Creación de interfaces web modernas, responsivas e intuitivas.",
-        skills: [
-          "React.js",
-          "Angular",
-          "JavaScript",
-          "TypeScript",
-          "HTML5",
-          "CSS3",
-          "Tailwind CSS",
-        ],
-      },
-      {
-        title: "Bases de datos",
-        description: "Diseño, manipulación e integración de bases de datos.",
-        skills: ["PostgreSQL", "MySQL", "SQL Server", "MongoDB", "Supabase"],
-      },
-      {
-        title: "DevOps",
-        description: "Automatización, contenedores, despliegue y monitorización.",
-        skills: [
-          "Docker",
-          "Kubernetes",
-          "Jenkins",
-          "Git",
-          "GitHub",
-          "CI/CD",
-          "Prometheus",
-          "Grafana",
-        ],
-      },
-      {
-        title: "Inteligencia artificial",
-        description: "Desarrollo e integración de soluciones inteligentes.",
-        skills: ["Machine Learning", "XGBoost", "Generative AI", "NLP", "OpenAI API"],
-      },
-      {
-        title: "Arquitectura",
-        description: "Diseño de arquitecturas de software modernas.",
-        skills: ["Microservicios", "API REST", "JWT", "MVC", "Agile Scrum"],
-      },
-    ],
   },
   projects: {
     label: "Mis realizaciones",
@@ -137,115 +78,17 @@ export const es: Translation = {
     featuredBadge: "Proyecto principal",
     github: "GitHub",
     demo: "Demo en vivo",
-    items: [
-      {
-        title: "NovaBank",
-        subtitle: "Detección inteligente de fraudes bancarios",
-        description:
-          "Plataforma de monitorización de transacciones financieras capaz de evaluar el riesgo de fraude en tiempo real, bloquear transacciones sospechosas y generar alertas automáticamente.",
-        technologies: [
-          "Java",
-          "Spring Boot",
-          "Spring Security",
-          "Angular",
-          "PostgreSQL",
-          "FastAPI",
-          "XGBoost",
-          "Docker",
-          "Kubernetes",
-        ],
-        githubUrl: "https://github.com/yourprofile/novabank",
-        featured: true,
-      },
-      {
-        title: "GuideApp",
-        subtitle: "Plataforma inteligente de orientación escolar",
-        description:
-          "Aplicación web que integra un test de personalidad MBTI y un chatbot inteligente para recomendar una orientación académica personalizada.",
-        technologies: ["React.js", "Spring Boot", "PostgreSQL", "OpenAI API", "API REST"],
-        githubUrl: "https://github.com/yourprofile/guideapp",
-      },
-      {
-        title: "E-Commerce Platform",
-        subtitle: "Plataforma e-commerce responsiva",
-        description:
-          "Sitio e-commerce responsivo para consultar productos, navegar entre categorías y gestionar un carrito de compras.",
-        technologies: ["React.js", "Node.js", "MongoDB", "Stripe"],
-        githubUrl: "https://github.com/yourprofile/ecommerce",
-      },
-      {
-        title: "Book Manager",
-        subtitle: "Aplicación de gestión de biblioteca",
-        description:
-          "Plataforma para gestionar libros, autores, categorías, usuarios y préstamos con funciones CRUD y búsqueda.",
-        technologies: ["React.js", "ASP.NET Core", "SQL Server", "Entity Framework", "JWT"],
-      },
-    ],
   },
   experience: {
     label: "Mi evolución profesional",
     title: "Experiencia profesional",
     columnTitle: "Experiencia profesional",
     technologiesLabel: "Tecnologías",
-    items: [
-      {
-        period: "Febrero 2026 – Junio 2026",
-        role: "Ingeniero de Software en prácticas — Proyecto de fin de estudios",
-        company: "Company Name",
-        location: "Sousse, Túnez",
-        description:
-          "Diseño y desarrollo de una plataforma inteligente de detección de fraudes bancarios y monitorización de transacciones financieras.",
-        technologies: [
-          "Java",
-          "Spring Boot",
-          "Angular",
-          "PostgreSQL",
-          "FastAPI",
-          "Docker",
-          "Kubernetes",
-          "Jenkins",
-        ],
-      },
-      {
-        period: "Julio 2025 – Agosto 2025",
-        role: "Desarrollador Full Stack en prácticas",
-        company: "Agency Name",
-        location: "Túnez, Túnez",
-        description:
-          "Desarrollo de una plataforma de orientación escolar con un chatbot inteligente para ofrecer recomendaciones personalizadas.",
-        technologies: ["React.js", "Spring Boot", "PostgreSQL", "OpenAI API", "API REST"],
-      },
-      {
-        period: "Julio 2024 – Agosto 2024",
-        role: "Desarrollador Web en prácticas",
-        company: "Company Name",
-        location: "Sousse, Túnez",
-        description:
-          "Desarrollo de una plataforma e-commerce responsiva con navegación, visualización de productos y gestión del carrito.",
-        technologies: ["HTML5", "CSS3", "JavaScript"],
-      },
-    ],
   },
   formation: {
     label: "Mi recorrido académico",
     title: "Formación",
     columnTitle: "Formación",
-    items: [
-      {
-        period: "Septiembre 2023 – Julio 2026",
-        degree: "Diploma Nacional de Ingeniería en Ingeniería de Software",
-        school: "Escuela Politécnica Internacional — EPI",
-        location: "Sousse, Túnez",
-        distinction: "Mención: Sobresaliente",
-      },
-      {
-        period: "Septiembre 2020 – Julio 2023",
-        degree: "Licenciatura Nacional en Informática",
-        school: "Instituto Superior de Informática",
-        location: "Monastir, Túnez",
-        distinction: "Mención: Muy Bien",
-      },
-    ],
   },
   certifications: {
     label: "Cualificaciones adicionales",
@@ -253,25 +96,6 @@ export const es: Translation = {
     certsTitle: "Certificaciones",
     languagesTitle: "Idiomas",
     personalSkillsTitle: "Habilidades personales",
-    certifications: [
-      { name: "Microsoft Azure AI-900", issuer: "Microsoft" },
-      { name: "Generative AI Professional", issuer: "Oracle Cloud Infrastructure 2025" },
-      { name: "CCNA 1 y 2", issuer: "Cisco Networking Academy" },
-      { name: "HTML5, CSS3, JavaScript y SQL", issuer: "Udemy" },
-    ],
-    languages: [
-      { name: "Árabe", level: "Lengua materna", percentage: 100 },
-      { name: "Francés", level: "Nivel profesional", percentage: 85 },
-      { name: "Inglés", level: "Intermedio — B2", percentage: 70 },
-    ],
-    personalSkills: [
-      "Espíritu analítico",
-      "Resolución de problemas",
-      "Trabajo en equipo",
-      "Comunicación",
-      "Adaptabilidad",
-      "Autonomía",
-    ],
   },
   contact: {
     label: "Trabajemos juntos",

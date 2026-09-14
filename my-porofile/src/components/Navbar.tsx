@@ -37,6 +37,14 @@ export default function Navbar() {
         </a>
 
         <ul className={`navbar__links ${open ? "navbar__links--open" : ""}`}>
+          <button
+            className="navbar__close"
+            onClick={handleNav}
+            aria-label="Close menu"
+            title="Close menu"
+          >
+            <X size={20} />
+          </button>
           {navLinks.map((link) => (
             <li key={link.href}>
               <a href={link.href} onClick={handleNav}>

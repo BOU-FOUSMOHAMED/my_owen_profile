@@ -1,10 +1,12 @@
 import { Server, Layout, Database, Cloud, Brain, Boxes, type LucideIcon } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
+import { specialites } from "../data/specialites";
 
 const categoryIcons: LucideIcon[] = [Server, Layout, Database, Cloud, Brain, Boxes];
 
 export default function Skills() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
+  const categories = specialites[lang].categories;
 
   return (
     <section className="section skills" id="skills">
@@ -16,7 +18,7 @@ export default function Skills() {
         </div>
 
         <div className="skills__grid">
-          {t.skills.categories.map((category, index) => {
+          {categories.map((category, index) => {
             const Icon = categoryIcons[index % categoryIcons.length];
             return (
               <article key={category.title} className="skill-card">

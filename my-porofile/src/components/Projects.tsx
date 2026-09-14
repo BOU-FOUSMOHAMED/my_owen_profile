@@ -1,8 +1,10 @@
 import { Code2, ExternalLink, Star } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
+import { projects } from "../data/projects";
 
 export default function Projects() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
+  const items = projects[lang].items;
 
   return (
     <section className="section projects" id="projects">
@@ -14,7 +16,7 @@ export default function Projects() {
         </div>
 
         <div className="projects__grid">
-          {t.projects.items.map((project) => (
+          {items.map((project) => (
             <article
               key={project.title}
               className={`project-card ${project.featured ? "project-card--featured" : ""}`}

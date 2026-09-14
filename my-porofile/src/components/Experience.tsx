@@ -1,8 +1,10 @@
 import { Briefcase } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
+import { experience } from "../data/experience";
 
 export default function Experience() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
+  const items = experience[lang].items;
 
   return (
     <section className="section experience" id="experience">
@@ -17,7 +19,7 @@ export default function Experience() {
           <Briefcase size={20} /> {t.experience.columnTitle}
         </h3>
         <div className="timeline">
-          {t.experience.items.map((exp) => (
+          {items.map((exp) => (
             <article key={exp.role} className="timeline__item">
               <div className="timeline__point" />
               <div className="timeline__card">

@@ -1,47 +1,3 @@
-export interface ProjectItem {
-  title: string;
-  subtitle: string;
-  description: string;
-  technologies: string[];
-  githubUrl?: string;
-  liveUrl?: string;
-  featured?: boolean;
-}
-
-export interface ExperienceItem {
-  period: string;
-  role: string;
-  company: string;
-  location: string;
-  description: string;
-  technologies: string[];
-}
-
-export interface EducationItem {
-  period: string;
-  degree: string;
-  school: string;
-  location: string;
-  distinction?: string;
-}
-
-export interface SkillCategoryItem {
-  title: string;
-  description: string;
-  skills: string[];
-}
-
-export interface CertificationItem {
-  name: string;
-  issuer: string;
-}
-
-export interface LanguageItem {
-  name: string;
-  level: string;
-  percentage: number;
-}
-
 export interface CardInfo {
   title: string;
   value: string;
@@ -93,7 +49,6 @@ export interface Translation {
   skills: {
     label: string;
     title: string;
-    categories: SkillCategoryItem[];
   };
   projects: {
     label: string;
@@ -101,20 +56,17 @@ export interface Translation {
     featuredBadge: string;
     github: string;
     demo: string;
-    items: ProjectItem[];
   };
   experience: {
     label: string;
     title: string;
     columnTitle: string;
     technologiesLabel: string;
-    items: ExperienceItem[];
   };
   formation: {
     label: string;
     title: string;
     columnTitle: string;
-    items: EducationItem[];
   };
   certifications: {
     label: string;
@@ -122,9 +74,6 @@ export interface Translation {
     certsTitle: string;
     languagesTitle: string;
     personalSkillsTitle: string;
-    certifications: CertificationItem[];
-    languages: LanguageItem[];
-    personalSkills: string[];
   };
   contact: {
     label: string;
