@@ -9,41 +9,25 @@ export const experience: Record<Lang, ExperienceData> = {
   fr: {
     items: [
       {
-        period: "Février 2026 – Juin 2026",
-        role: "Stagiaire Ingénieur Logiciel — Projet de fin d'études",
-        company: "Company Name",
-        location: "Sousse, Tunisie",
+        period: "Juillet  2026 – Septembre 2026",
+        role: " Security & Back-end Developper  — Projet de fin d'année",
+        company: "FirstFinTech Company",
+        location: "Agadir, Maroc",
         description:
-          "Conception et développement d'une plateforme intelligente de détection des fraudes bancaires et de surveillance des transactions financières.",
+          " Mise en place d'une plateforme intelligente GRC (Gouvernance, Risque et Conformité) , dans la partie compiliance et pentration test. ",
         technologies: [
           "Java",
           "Spring Boot",
-          "Angular",
+          
           "PostgreSQL",
           "FastAPI",
           "Docker",
           "Kubernetes",
-          "Jenkins",
+         "Swagger", 
+         "rabbitMQ" 
         ],
       },
-      {
-        period: "Juillet 2025 – Août 2025",
-        role: "Stagiaire Développeur Full Stack",
-        company: "Agency Name",
-        location: "Tunis, Tunisie",
-        description:
-          "Développement d'une plateforme d'orientation scolaire intégrant un chatbot intelligent pour fournir des recommandations personnalisées.",
-        technologies: ["React.js", "Spring Boot", "PostgreSQL", "OpenAI API", "API REST"],
-      },
-      {
-        period: "Juillet 2024 – Août 2024",
-        role: "Stagiaire Développeur Web",
-        company: "Company Name",
-        location: "Sousse, Tunisie",
-        description:
-          "Développement d'une plateforme e-commerce responsive avec navigation, affichage des produits et gestion du panier.",
-        technologies: ["HTML5", "CSS3", "JavaScript"],
-      },
+      
     ],
   },
   en: {

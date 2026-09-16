@@ -55,6 +55,18 @@ export default function Hero() {
 
   return (
     <section className="hero" id="home">
+      <div className="hero__video" aria-hidden="true">
+        <video
+          className="hero__video-frame"
+          src="https://assets.mixkit.co/videos/41648/41648-720.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+        />
+        <div className="hero__video-overlay" />
+      </div>
       <div className="hero__content">
         <div className="hero__text">
           <p className="hero__welcome">{t.hero.welcome}</p>
@@ -75,7 +87,8 @@ export default function Hero() {
         <div className="hero__image">
           <div className="hero__image-decoration" />
           <div className="hero__avatar">
-            {personal.firstName[0]}{personal.lastName[0]}
+            // {personal.firstName[0]}{personal.lastName[0]}
+            <img src="c:/Users/hp/Pictures/mon.jpg.webp" alt="mon profile" />
           </div>
           <div className="hero__floating">
             {floatingIcons.map(({ id, Icon, label, color }, index) => {

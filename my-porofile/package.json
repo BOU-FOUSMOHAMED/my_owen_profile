@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://BOU-FOUSMOHAMED.github.io/react-front-end/",
+  "homepage": "https://BOU-FOUSMOHAMED.github.io/my_owen_profile/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

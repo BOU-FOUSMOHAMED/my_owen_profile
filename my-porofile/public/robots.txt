@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://BOU-FOUSMOHAMED.github.io/my_owen_profile/sitemap.xml
