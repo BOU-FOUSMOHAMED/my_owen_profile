@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import type { MouseEvent } from "react";
+import type { LucideIcon } from "lucide-react";
 import {
   Sun,
   Moon,
@@ -15,8 +16,15 @@ import { personal } from "../data/personal";
 import { useTheme } from "../context/ThemeContext";
 import { useLanguage } from "../context/LanguageContext";
 import LanguageSwitcher from "./LanguageSwitcher";
+import FloatingNav from "./FloatingNav";
 
 const NAV_IDS = ["home", "about", "skills", "experience", "projects", "formation", "contact"];
+
+interface NavLinkItem {
+  label: string;
+  href: string;
+  icon: LucideIcon;
+}
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -25,7 +33,7 @@ export default function Navbar() {
   const { theme, toggleTheme } = useTheme();
   const { t } = useLanguage();
 
-  const navLinks = [
+  const navLinks: NavLinkItem[] = [
     { label: t.nav.home, href: "#home", icon: Home },
     { label: t.nav.about, href: "#about", icon: User },
     { label: t.nav.skills, href: "#skills", icon: Code2 },
@@ -127,7 +135,7 @@ export default function Navbar() {
       </header>
 
       <nav
-        className="fixed right-[22px] top-1/2 z-[900] flex max-sm:bottom-4 max-sm:left-1/2 max-sm:right-1/2 max-sm:top-auto max-sm:flex-row max-sm:px-3.5 max-sm:py-2 flex-col items-center justify-center gap-3 rounded-[999px] border border-line bg-nav px-2 py-3 shadow-glow backdrop-blur-[18px] backdrop-saturate-150 animate-dock-in max-sm:animate-dock-in-mobile"
+        className="fixed right-[22px] top-1/2 z-[900] hidden animate-dock-in flex-col items-center justify-center gap-3 rounded-[999px] border border-line bg-nav px-2 py-3 shadow-glow backdrop-blur-[18px] backdrop-saturate-150 lg:flex"
         aria-label="Navigation"
       >
         {navLinks.map((link) => {
@@ -137,15 +145,15 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className={`group relative grid size-[42px] place-items-center rounded-[14px] text-muted transition duration-[280ms] hover:-translate-x-[3px] hover:scale-[1.08] hover:bg-badge hover:text-accent hover:shadow-glow max-sm:hover:translate-x-0 max-sm:hover:-translate-y-[3px] ${
+              className={`group relative grid size-[42px] place-items-center rounded-[14px] text-muted transition duration-[280ms] hover:-translate-x-[3px] hover:scale-[1.08] hover:bg-badge hover:text-accent hover:shadow-glow ${
                 isActive
-                  ? "bg-grad text-white shadow-[0_8px_22px_rgba(37,99,235,0.35)] hover:translate-x-0 hover:bg-grad hover:text-white max-sm:hover:translate-y-0"
+                  ? "bg-grad text-white shadow-[0_8px_22px_rgba(37,99,235,0.35)] hover:translate-x-0 hover:bg-grad hover:text-white"
                   : ""
               }`}
               onClick={(e) => handleNavClick(e, link.href)}
               aria-current={isActive ? "page" : undefined}
             >
-              <span className="pointer-events-none absolute right-[calc(100%+14px)] top-1/2 z-[950] -translate-y-1/2 translate-x-[-4px] whitespace-nowrap rounded-lg border border-line bg-card px-2.5 py-1 text-[0.75rem] font-semibold text-ink opacity-0 shadow-card transition duration-[280ms] group-hover:translate-x-0 group-hover:opacity-100 max-sm:hidden">
+              <span className="pointer-events-none absolute right-[calc(100%+14px)] top-1/2 z-[950] -translate-y-1/2 translate-x-[-4px] whitespace-nowrap rounded-lg border border-line bg-card px-2.5 py-1 text-[0.75rem] font-semibold text-ink opacity-0 shadow-card transition duration-[280ms] group-hover:translate-x-0 group-hover:opacity-100">
                 {link.label}
               </span>
               <Icon size={20} />
@@ -159,6 +167,8 @@ export default function Navbar() {
           );
         })}
       </nav>
+
+      <FloatingNav items={navLinks} active={active} onNavigate={scrollToSection} />
     </>
   );
 }
