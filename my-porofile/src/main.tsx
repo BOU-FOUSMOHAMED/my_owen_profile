@@ -3,7 +3,8 @@ import { RouterProvider } from "react-router-dom";
 import { router } from "./router";
 import { ThemeProvider } from "./context/ThemeContext";
 import { LanguageProvider } from "./context/LanguageContext";
-import "./styles.css";
+import "./index.css";
+import "./lib/reveal";
 
 createRoot(document.getElementById("root")!).render(
   <ThemeProvider>

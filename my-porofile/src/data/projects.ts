@@ -24,7 +24,14 @@ export const projects: Record<Lang, ProjectsData> = {
           "Docker",
           "Kubernetes",
         ],
-        githubUrl: "https://github.com/yourprofile/novabank",
+        featured: true,
+      },
+      {
+        title: "Plateforme GRC",
+        subtitle: "Gouvernance, risque et conformité",
+        description:
+          "Développement backend d'une plateforme intelligente GRC — module conformité et intégration des tests de pénétration — avec Java, Spring Boot et conteneurisation Docker.",
+        technologies: ["Java", "Spring Boot", "PostgreSQL", "Docker", "Kubernetes", "RabbitMQ", "Swagger"],
         featured: true,
       },
       {
@@ -33,7 +40,6 @@ export const projects: Record<Lang, ProjectsData> = {
         description:
           "Application web intégrant un test de personnalité MBTI et un chatbot intelligent pour proposer une orientation scolaire personnalisée.",
         technologies: ["React.js", "Spring Boot", "PostgreSQL", "OpenAI API", "API REST"],
-        githubUrl: "https://github.com/yourprofile/guideapp",
       },
       {
         title: "E-Commerce Platform",
@@ -41,7 +47,6 @@ export const projects: Record<Lang, ProjectsData> = {
         description:
           "Site e-commerce responsive permettant de consulter les produits, naviguer entre les catégories et gérer un panier d'achats.",
         technologies: ["React.js", "Node.js", "MongoDB", "Stripe"],
-        githubUrl: "https://github.com/yourprofile/ecommerce",
       },
       {
         title: "Book Manager",
@@ -70,7 +75,14 @@ export const projects: Record<Lang, ProjectsData> = {
           "Docker",
           "Kubernetes",
         ],
-        githubUrl: "https://github.com/yourprofile/novabank",
+        featured: true,
+      },
+      {
+        title: "GRC Platform",
+        subtitle: "Governance, risk and compliance",
+        description:
+          "Backend development of an intelligent GRC platform — compliance module and penetration testing integration — with Java, Spring Boot and Docker containerization.",
+        technologies: ["Java", "Spring Boot", "PostgreSQL", "Docker", "Kubernetes", "RabbitMQ", "Swagger"],
         featured: true,
       },
       {
@@ -79,7 +91,6 @@ export const projects: Record<Lang, ProjectsData> = {
         description:
           "Web application integrating an MBTI personality test and an intelligent chatbot to recommend personalized academic orientation.",
         technologies: ["React.js", "Spring Boot", "PostgreSQL", "OpenAI API", "REST API"],
-        githubUrl: "https://github.com/yourprofile/guideapp",
       },
       {
         title: "E-Commerce Platform",
@@ -87,7 +98,6 @@ export const projects: Record<Lang, ProjectsData> = {
         description:
           "Responsive e-commerce website allowing users to browse products, navigate between categories and manage a shopping cart.",
         technologies: ["React.js", "Node.js", "MongoDB", "Stripe"],
-        githubUrl: "https://github.com/yourprofile/ecommerce",
       },
       {
         title: "Book Manager",
@@ -116,7 +126,14 @@ export const projects: Record<Lang, ProjectsData> = {
           "Docker",
           "Kubernetes",
         ],
-        githubUrl: "https://github.com/yourprofile/novabank",
+        featured: true,
+      },
+      {
+        title: "Plataforma GRC",
+        subtitle: "Gobernanza, riesgo y cumplimiento",
+        description:
+          "Desarrollo backend de una plataforma inteligente GRC — módulo de cumplimiento e integración de pruebas de penetración — con Java, Spring Boot y contenedores Docker.",
+        technologies: ["Java", "Spring Boot", "PostgreSQL", "Docker", "Kubernetes", "RabbitMQ", "Swagger"],
         featured: true,
       },
       {
@@ -125,7 +142,6 @@ export const projects: Record<Lang, ProjectsData> = {
         description:
           "Aplicación web que integra un test de personalidad MBTI y un chatbot inteligente para recomendar una orientación académica personalizada.",
         technologies: ["React.js", "Spring Boot", "PostgreSQL", "OpenAI API", "API REST"],
-        githubUrl: "https://github.com/yourprofile/guideapp",
       },
       {
         title: "E-Commerce Platform",
@@ -133,7 +149,6 @@ export const projects: Record<Lang, ProjectsData> = {
         description:
           "Sitio e-commerce responsivo para consultar productos, navegar entre categorías y gestionar un carrito de compras.",
         technologies: ["React.js", "Node.js", "MongoDB", "Stripe"],
-        githubUrl: "https://github.com/yourprofile/ecommerce",
       },
       {
         title: "Book Manager",
@@ -162,7 +177,14 @@ export const projects: Record<Lang, ProjectsData> = {
           "Docker",
           "Kubernetes",
         ],
-        githubUrl: "https://github.com/yourprofile/novabank",
+        featured: true,
+      },
+      {
+        title: "منصة GRC",
+        subtitle: "الحوكمة والمخاطر والامتثال",
+        description:
+          "تطوير واجهة خلفية لمنصة GRC ذكية — وحدة الامتثال ودمج اختبارات الاختراق — بـ Java وSpring Boot وحاويات Docker.",
+        technologies: ["Java", "Spring Boot", "PostgreSQL", "Docker", "Kubernetes", "RabbitMQ", "Swagger"],
         featured: true,
       },
       {
@@ -171,7 +193,6 @@ export const projects: Record<Lang, ProjectsData> = {
         description:
           "تطبيق ويب يدمج اختبار شخصية MBTI وروبوت محادثة ذكي لاقتراح توجيه أكاديمي مخصص.",
         technologies: ["React.js", "Spring Boot", "PostgreSQL", "OpenAI API", "REST API"],
-        githubUrl: "https://github.com/yourprofile/guideapp",
       },
       {
         title: "E-Commerce Platform",
@@ -179,13 +200,12 @@ export const projects: Record<Lang, ProjectsData> = {
         description:
           "موقع تجارة إلكترونية متجاوب يتيح تصفح المنتجات والتنقل بين الفئات وإدارة سلة التسوق.",
         technologies: ["React.js", "Node.js", "MongoDB", "Stripe"],
-        githubUrl: "https://github.com/yourprofile/ecommerce",
       },
       {
         title: "Book Manager",
         subtitle: "تطبيق إدارة مكتبة",
         description:
-          "منصة لإدارة الكتب والمؤلفين والفئات والمستخدمين وال\Contracts مع وظائف CRUD والبحث.",
+          "منصة لإدارة الكتب والمؤلفين والفئات والمستخدمين والإعارات مع وظائف CRUD والبحث.",
         technologies: ["React.js", "ASP.NET Core", "SQL Server", "Entity Framework", "JWT"],
       },
     ],
@@ -208,7 +228,14 @@ export const projects: Record<Lang, ProjectsData> = {
           "Docker",
           "Kubernetes",
         ],
-        githubUrl: "https://github.com/yourprofile/novabank",
+        featured: true,
+      },
+      {
+        title: "ⴰⵙⴻⵏⴼⴰⵔ GRC",
+        subtitle: "ⴰⵙⴻⵏⵜⴰⵔⵔⴻⵖ, ⴰⵣⴻⵔ ⴷ ⵓⵙⵄⴰⴷ",
+        description:
+          "ⴰⵙⵏⴼⵓ ⵏ backend ⵏ plateforme ⵜⴰⵣⴳⵣⴰⵡⵜ GRC — ⵜⴰⵎⵓⵔⵜ ⵏ compliance ⴷ ⵓⵣⴻⴷⴷⵓⴽⴻⵍ ⵏ ⵜⵉⴽⵙⴰⵢ ⵏ penetration — ⵙ Java, Spring Boot ⴷ Docker.",
+        technologies: ["Java", "Spring Boot", "PostgreSQL", "Docker", "Kubernetes", "RabbitMQ", "Swagger"],
         featured: true,
       },
       {
@@ -217,15 +244,13 @@ export const projects: Record<Lang, ProjectsData> = {
         description:
           "ⴰⵙⴻⴱⵜⴻⵔ ⵏ ⵡⴻⴱ ⵢⴻⵜⵜⴻⵎⵍⵉⵍⵉⵏ ⴰⴽⴽⴻⴷ MBTI ⵜⴻⵙⵜ ⴷ chatbot ⵢⴻⵙⵙⴻⵥⴳⴰⵏ ⵉⵡⴰⴽⴽⴻⵏ ⴰⴷ ⴷ-ⴷⵢⴻⴼⴽ ⵜⴰⵏⴼⵓⵙ ⵏ ⵓⵙⴻⵏⴼⴻⵍ.",
         technologies: ["React.js", "Spring Boot", "PostgreSQL", "OpenAI API", "API REST"],
-        githubUrl: "https://github.com/yourprofile/guideapp",
       },
       {
         title: "E-Commerce Platform",
         subtitle: "ⴰⵙⴻⴱⵜⴻⵔ ⵏ e-commerce ⵜⴻⵔⵉⴳⵉⵏ",
         description:
-          "ⴰⵙⴻⴱⵜⴻⵔ ⵏ e-commerce ⵜⴻⵔⵉⴳⵉⵏ ⵉⵡⴰⴽⴽⴻⵏ ⴰⴷ ⵡⴰⵍⵉⵏ ⵉⵎⴽⴻⵏ, ⴰⴷ ⵏⵏⴻⵇⵔⴻⵏ ⵉⵎⴰⵏ ⵜⵉⴳⴻⵊⴷⴰ ⴷ ⴰⵙⴻⴼⴰⵎⵎⵉ ⵏ panier.",
+          "ⴰⵙⴻⴱⵜⴻⵔ ⵏ e-commerce ⵜⴻⵔⵉⴳⵉⵏ ⵉⵡⴰⴽⴻⵏ ⴰⴷ ⵡⴰⵍⵉⵏ ⵉⵎⴽⴻⵏ, ⴰⴷ ⵏⵏⴻⵇⵔⴻⵏ ⵉⵎⴰⵏ ⵜⵉⴳⴻⵊⴷⴰ ⴷ ⴰⵙⴻⴼⴰⵎⵎⵉ ⵏ panier.",
         technologies: ["React.js", "Node.js", "MongoDB", "Stripe"],
-        githubUrl: "https://github.com/yourprofile/ecommerce",
       },
       {
         title: "Book Manager",

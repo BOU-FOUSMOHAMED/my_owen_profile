@@ -8,12 +8,10 @@ export const ar: Translation = {
     home: "الرئيسية",
     about: "عنّي",
     skills: "المهارات",
-    projects: "المشاريع",
     experience: "الخبرات",
+    projects: "المشاريع",
     formation: "التكوين",
-    certifications: "الشهادات",
     contact: "التواصل",
-    hireMe: "تواصل معي",
   },
   theme: {
     toDark: "التبديل إلى الوضع الداكن",
@@ -23,86 +21,109 @@ export const ar: Translation = {
     label: "تغيير اللغة",
   },
   hero: {
-    welcome: "مرحباً بكم في معرض أعمالي",
-    hello: "مرحباً، أنا",
-    title: "مطوّر Full Stack | الواجهة الخلفية Java Spring Boot والواجهة الأمامية React",
+    eyebrow: "محمد بو فوس · BACK END LEADER",
+    titleStart: "مطوّر full stack،",
+    titleHighlight: "Java Spring Boot",
+    titleEnd: " — backend والذكاء الاصطناعي.",
     description:
-      "مطوّر Full Stack متخصص في تطوير الواجهات الخلفية باستخدام Java Spring Boot والواجهات الأمامية باستخدام React. أصمّم تطبيقات ويب سريعة وآمنة وقابلة للصيانة بمعماريات حديثة.",
-    viewProjects: "شاهد مشاريعي",
-    contactMe: "تواصل معي",
-  },
-  about: {
-    label: "اكتشف ملفي الشخصي",
-    heading: "تطوير Full Stack، معماريات حديثة وحلول عالية الأداء",
-    intro:
-      "مطوّر Full Stack متخصص في Java وSpring Boot وReact، أصمّم تطبيقات ويب سريعة وآمنة وقابلة للصيانة.",
-    summary: [
-      "بأندفاع للهندسة البرمجية، أملك خبرة قوية في تطوير الواجهات الخلفية (Java, Spring Boot, Node.js) والواجهات الأمامية (React, Angular, TypeScript).",
-      "أولي أهمية كبيرة للممارسات الجيدة: بنية الخدمات المصغرة (Microservices)، واجهات REST الآمنة (Spring Security, JWT)، الاختبارات،حاويات Docker، Coordination Kubernetes وأنابيب CI/CD.",
-      "فضولي ومنضبط، أحب مواجهة التحديات التقنية والعمل ضمن فرق Agile لإنتاج منتجات عالية الجودة.",
+      "مطوّر واجهات خلفية Java ومطوّر full stack، أصمّم واجهات REST وMicroservices بـ Spring Boot، وواجهات React، وأدمج مساعدي الذكاء الاصطناعي في تطبيقات ويب سريعة وآمنة وقابلة للصيانة.",
+    ctaPrimary: "استكشف مشاريعي",
+    ctaSecondary: "تواصل معي",
+    cardEyebrow: "التخصص التقني",
+    focus: [
+      {
+        term: "Backend Java / Spring Boot",
+        detail: "واجهات REST، Microservices، Spring Security وJWT",
+      },
+      {
+        term: "تطوير Full Stack",
+        detail: "واجهات React مرتبطة بواجهة خلفية قوية، من البداية إلى النهاية",
+      },
+      {
+        term: "الذكاء الاصطناعي",
+        detail: "Machine Learning ودمج مساعدي الذكاء الاصطناعي",
+      },
+      {
+        term: "DevOps والCloud",
+        detail: "Docker وKubernetes وخطوط CI/CD",
+      },
+      {
+        term: "قواعد البيانات",
+        detail: "PostgreSQL وMySQL وMongoDB وSQL Server",
+      },
     ],
-    highlights: [
-      "تطوير الواجهات الخلفية باستخدام Java وSpring Boot وNode.js",
-      "تطوير الواجهات الأمامية باستخدام React وAngular وTypeScript",
-      "تصميم وتأمين واجهات REST باستخدام Spring Security وJWT",
-      "DevOps: Docker وKubernetes وJenkins وCI/CD",
-      "قواعد البيانات: PostgreSQL وMySQL وMongoDB",
-      "منهجيات Agile (Scrum)",
-    ],
-    cards: {
-      formation: {
-        title: "التكوين",
-        value: "مهندس في هندسة البرمجيات",
-      },
-      specialty: {
-        title: "التخصص",
-        value: "Java وSpring Boot وReact والمعماريات الحديثة",
-      },
-      ai: {
-        title: "الذكاء الاصطناعي",
-        value: "Machine Learning وXGBoost والذكاء الاصطناعي التوليدي",
-      },
-      goal: {
-        title: "الهدف",
-        value: "عقد دائم، مهمات حرة وتعاونات",
-      },
+    stats: {
+      years: "1+",
+      projects: "5",
+      certs: "4+",
+      yearsLabel: "سنوات الخبرة",
+      projectsLabel: "مشاريع منجزة",
+      certsLabel: "شهادات",
     },
   },
-  skills: {
-    label: "التقنيات والخبرات",
-    title: "مهاراتي التقنية",
+  about: {
+    label: "01 · الفلسفة",
+    heading: "المعرفة تهم عندما يمكن تطبيقها.",
+    paragraph1:
+      "مطوّر واجهات خلفية ومطوّر full stack متدرّب في هندسة البرمجيات، أستخدم Java وSpring Boot لبناء واجهات REST وMicroservices آمنة، وReact للواجهات الحديثة. الشهادات ليست الهدف النهائي: المهم هو ما تفهمه، وتستطيع شرحه، وتطبّقه على مشاكل حقيقية.",
+    paragraph2:
+      "أؤمن بالتكنولوجيا في خدمة هدف واضح. واجهة برمجية أو أتمتة أو مساعد ذكاء اصطناعي لا تكون ذات معنى إلا إذا حسّنت عملية، أو قلّلت التعقيد، أو سدّت حاجة حقيقية — مع ممارسات جيدة: الاختبارات، الأمان (Spring Security, JWT) والنشر الآلي.",
+    principlesTitle: "مبادئي",
+    principles: [
+      {
+        num: "01",
+        title: "افهم",
+        text: "تعلّم كيف يعمل النظام قبل تغييره.",
+      },
+      {
+        num: "02",
+        title: "طبّق",
+        text: "حوّل النظرية إلى قرارات وحلول ومنتجات حقيقية.",
+      },
+      {
+        num: "03",
+        title: "بسّط",
+        text: "التكنولوجيا يجب أن تقلّل التعقيد، لا أن تزيده.",
+      },
+    ],
   },
-  projects: {
-    label: "إنجازاتي",
-    title: "المشاريع الرئيسية",
-    featuredBadge: "مشروع رئيسي",
-    github: "GitHub",
-    demo: "عرض مباشر",
+  skills: {
+    label: "02 · المهارات",
+    title: "مجموعة أدوات المطوّر الخاصة بي.",
+    intro:
+      "Backend وFrontend وقواعد البيانات وDevOps والذكاء الاصطناعي: التقنيات التي أستخدمها لتسليم تطبيقات كاملة، من واجهة Spring Boot إلى واجهة React.",
   },
   experience: {
-    label: "مسارني المهني",
-    title: "الخبرات المهنية",
-    columnTitle: "الخبرات المهنية",
+    label: "03 · الخبرات",
+    title: "الخبرة المهنية",
+    intro: "مسار متمرّز على backend بـ Java وSpring Boot ومنتجات حقيقية.",
     technologiesLabel: "التقنيات",
   },
-  formation: {
-    label: "المسار الأكاديمي",
-    title: "التكوين",
-    columnTitle: "التكوين",
+  projects: {
+    label: "04 · المشاريع",
+    title: "مشاريع full stack حقيقية.",
+    intro:
+      "تطبيقات ويب ومساعدون أذكياء مبنيون بـ Java وSpring Boot وReact والذكاء الاصطناعي — مؤمّنة ومعبأة ومنشورة.",
+    featuredBadge: "مشروع رئيسي",
+    links: {
+      code: "الكود المصدري",
+      demo: "عرض مباشر",
+    },
   },
-  certifications: {
-    label: "مؤهلات إضافية",
-    title: "الشهادات واللغات",
+  formation: {
+    label: "05 · التكوين والشهادات",
+    title: "التكوين والمؤهلات",
+    educationColumn: "المسار الأكاديمي",
     certsTitle: "الشهادات",
     languagesTitle: "اللغات",
     personalSkillsTitle: "المهارات الشخصية",
   },
   contact: {
-    label: "لنعمل معاً",
-    title: "تواصل معي",
-    heading: "لنتحدث عن مشروعك",
+    label: "06 · التواصل",
+    title: "لنعمل معاً",
+    heading: "لنتحدث عن مشروعك.",
     description:
-      "هل لديك فرصة أو مهمة حرة أو مشروع تريد تنفيذه؟ لا تتردد في التواصل معي.",
+      "هل تبحث عن مطوّر واجهات خلفية Java أو مطوّر full stack لمهمة، أو عقد دائم، أو مشروع Spring Boot؟ لنتناقش.",
     email: "البريد الإلكتروني",
     phone: "الهاتف",
     location: "الموقع",
@@ -112,19 +133,19 @@ export const ar: Translation = {
       name: "الاسم الكامل",
       namePlaceholder: "اسمك",
       email: "عنوان البريد الإلكتروني",
-      emailPlaceholder: "بريدك@بريد.com",
+      emailPlaceholder: "you@email.com",
       subject: "الموضوع",
       subjectPlaceholder: "اقتراح تعاون",
       message: "الرسالة",
-      messagePlaceholder: "اكتب رسالتك...",
+      messagePlaceholder: "صِف مشروعك...",
       submit: "إرسال الرسالة",
     },
   },
   footer: {
-    tagline: "مطوّر Full Stack | الواجهة الخلفية Java Spring Boot والواجهة الأمامية React",
+    tagline: "مطوّر backend بـ Java و full stack — Spring Boot وReact والذكاء الاصطناعي.",
     navigation: "التنقل",
-    followMe: "تابعني",
     builtWith: "معرض الأعمال مبني باستخدام React",
+    backToTop: "العودة إلى الأعلى",
   },
   notFound: {
     title: "الصفحة غير موجودة",

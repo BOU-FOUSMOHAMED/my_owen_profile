@@ -1,6 +1,12 @@
-export interface CardInfo {
+export interface FocusItem {
+  term: string;
+  detail: string;
+}
+
+export interface PrincipleItem {
+  num: string;
   title: string;
-  value: string;
+  text: string;
 }
 
 export interface Translation {
@@ -11,12 +17,10 @@ export interface Translation {
     home: string;
     about: string;
     skills: string;
-    projects: string;
     experience: string;
+    projects: string;
     formation: string;
-    certifications: string;
     contact: string;
-    hireMe: string;
   };
   theme: {
     toDark: string;
@@ -26,51 +30,57 @@ export interface Translation {
     label: string;
   };
   hero: {
-    welcome: string;
-    hello: string;
-    title: string;
+    eyebrow: string;
+    titleStart: string;
+    titleHighlight: string;
+    titleEnd: string;
     description: string;
-    viewProjects: string;
-    contactMe: string;
+    ctaPrimary: string;
+    ctaSecondary: string;
+    cardEyebrow: string;
+    focus: FocusItem[];
+    stats: {
+      years: string;
+      projects: string;
+      certs: string;
+      yearsLabel: string;
+      projectsLabel: string;
+      certsLabel: string;
+    };
   };
   about: {
     label: string;
     heading: string;
-    intro: string;
-    summary: string[];
-    highlights: string[];
-    cards: {
-      formation: CardInfo;
-      specialty: CardInfo;
-      ai: CardInfo;
-      goal: CardInfo;
-    };
+    paragraph1: string;
+    paragraph2: string;
+    principlesTitle: string;
+    principles: PrincipleItem[];
   };
   skills: {
     label: string;
     title: string;
-  };
-  projects: {
-    label: string;
-    title: string;
-    featuredBadge: string;
-    github: string;
-    demo: string;
+    intro: string;
   };
   experience: {
     label: string;
     title: string;
-    columnTitle: string;
+    intro: string;
     technologiesLabel: string;
+  };
+  projects: {
+    label: string;
+    title: string;
+    intro: string;
+    featuredBadge: string;
+    links: {
+      code: string;
+      demo: string;
+    };
   };
   formation: {
     label: string;
     title: string;
-    columnTitle: string;
-  };
-  certifications: {
-    label: string;
-    title: string;
+    educationColumn: string;
     certsTitle: string;
     languagesTitle: string;
     personalSkillsTitle: string;
@@ -100,8 +110,8 @@ export interface Translation {
   footer: {
     tagline: string;
     navigation: string;
-    followMe: string;
     builtWith: string;
+    backToTop: string;
   };
   notFound: {
     title: string;

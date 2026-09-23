@@ -8,12 +8,10 @@ export const es: Translation = {
     home: "Inicio",
     about: "Sobre mí",
     skills: "Habilidades",
-    projects: "Proyectos",
     experience: "Experiencia",
+    projects: "Proyectos",
     formation: "Formación",
-    certifications: "Certificaciones",
     contact: "Contacto",
-    hireMe: "Contacto",
   },
   theme: {
     toDark: "Cambiar a modo oscuro",
@@ -23,86 +21,109 @@ export const es: Translation = {
     label: "Cambiar idioma",
   },
   hero: {
-    welcome: "Bienvenido a mi portafolio",
-    hello: "Hola, soy",
-    title: "Desarrollador Full Stack | Backend Java Spring Boot y Frontend React",
+    eyebrow: "MOHAMED BOU-FOUS · BACK END LEADER",
+    titleStart: "Desarrollador full stack,",
+    titleHighlight: "Java Spring Boot",
+    titleEnd: " — backend e IA.",
     description:
-      "Desarrollador Full Stack especializado en desarrollo backend con Java Spring Boot y frontend con React. Diseño aplicaciones web rápidas, seguras y mantenibles con arquitecturas modernas.",
-    viewProjects: "Ver mis proyectos",
-    contactMe: "Contáctame",
-  },
-  about: {
-    label: "Descubre mi perfil",
-    heading: "Desarrollo Full Stack, arquitecturas modernas y soluciones de alto rendimiento",
-    intro:
-      "Desarrollador Full Stack especializado en Java, Spring Boot y React, diseño aplicaciones web rápidas, seguras y mantenibles.",
-    summary: [
-      "Apasionado por la ingeniería de software, tengo una sólida experiencia en desarrollo backend (Java, Spring Boot, Node.js) y frontend (React, Angular, TypeScript).",
-      "Doy gran importancia a las buenas prácticas: arquitectura de microservicios, APIs REST seguras (Spring Security, JWT), pruebas, contenedores Docker, orquestación con Kubernetes y pipelines CI/CD.",
-      "Curioso y riguroso, me gusta asumir retos técnicos y colaborar en equipos ágiles para entregar productos de calidad.",
+      "Desarrollador backend Java y desarrollador full stack, diseño APIs REST y microservicios con Spring Boot, interfaces React e integro asistentes de IA en aplicaciones web rápidas, seguras y mantenibles.",
+    ctaPrimary: "Explorar mis proyectos",
+    ctaSecondary: "Contáctame",
+    cardEyebrow: "ENFOQUE TÉCNICO",
+    focus: [
+      {
+        term: "Backend Java / Spring Boot",
+        detail: "APIs REST, microservicios, Spring Security y JWT",
+      },
+      {
+        term: "Desarrollo full stack",
+        detail: "Frontend React conectado a un backend robusto, de punta a punta",
+      },
+      {
+        term: "Inteligencia artificial",
+        detail: "Machine Learning e integración de asistentes de IA",
+      },
+      {
+        term: "DevOps & Cloud",
+        detail: "Docker, Kubernetes y pipelines de CI/CD",
+      },
+      {
+        term: "Bases de datos",
+        detail: "PostgreSQL, MySQL, MongoDB y SQL Server",
+      },
     ],
-    highlights: [
-      "Desarrollo backend con Java, Spring Boot y Node.js",
-      "Desarrollo frontend con React, Angular y TypeScript",
-      "Diseño y seguridad de APIs REST con Spring Security y JWT",
-      "DevOps: Docker, Kubernetes, Jenkins, CI/CD",
-      "Bases de datos: PostgreSQL, MySQL, MongoDB",
-      "Metodologías ágiles (Scrum)",
-    ],
-    cards: {
-      formation: {
-        title: "Formación",
-        value: "Ingeniero en Ingeniería de Software",
-      },
-      specialty: {
-        title: "Especialidad",
-        value: "Java, Spring Boot, React y arquitecturas modernas",
-      },
-      ai: {
-        title: "Inteligencia artificial",
-        value: "Machine Learning, XGBoost y IA generativa",
-      },
-      goal: {
-        title: "Objetivo",
-        value: "Contrato fijo, misiones freelance y colaboraciones",
-      },
+    stats: {
+      years: "1+",
+      projects: "5",
+      certs: "4+",
+      yearsLabel: "Años de experiencia",
+      projectsLabel: "Proyectos entregados",
+      certsLabel: "Certificaciones",
     },
   },
-  skills: {
-    label: "Tecnologías y experiencia",
-    title: "Mis habilidades técnicas",
+  about: {
+    label: "01 · FILOSOFÍA",
+    heading: "El conocimiento importa cuando se puede aplicar.",
+    paragraph1:
+      "Desarrollador backend y desarrollador full stack formado en ingeniería de software, uso Java y Spring Boot para construir APIs REST y microservicios seguros, y React para interfaces modernas. Los títulos y certificaciones no son el objetivo final: lo que importa es lo que se entiende, se sabe explicar y aplicar a problemas reales.",
+    paragraph2:
+      "Creo en una tecnología al servicio de un objetivo claro. Una API, una automatización o un asistente de IA solo tiene sentido si mejora un proceso, reduce fricción o resuelve una necesidad real — con buenas prácticas: pruebas, seguridad (Spring Security, JWT) y despliegue automatizado.",
+    principlesTitle: "Mis principios",
+    principles: [
+      {
+        num: "01",
+        title: "Comprender",
+        text: "Aprender cómo funciona el sistema antes de modificarlo.",
+      },
+      {
+        num: "02",
+        title: "Aplicar",
+        text: "Convertir la teoría en decisiones, soluciones y productos reales.",
+      },
+      {
+        num: "03",
+        title: "Simplificar",
+        text: "La tecnología debe reducir la complejidad, no crearla.",
+      },
+    ],
   },
-  projects: {
-    label: "Mis realizaciones",
-    title: "Proyectos principales",
-    featuredBadge: "Proyecto principal",
-    github: "GitHub",
-    demo: "Demo en vivo",
+  skills: {
+    label: "02 · HABILIDADES",
+    title: "Mi caja de herramientas de desarrollador.",
+    intro:
+      "Backend, frontend, bases de datos, DevOps e inteligencia artificial: las tecnologías que uso para entregar aplicaciones completas, desde la API Spring Boot hasta la interfaz React.",
   },
   experience: {
-    label: "Mi evolución profesional",
+    label: "03 · EXPERIENCIA",
     title: "Experiencia profesional",
-    columnTitle: "Experiencia profesional",
+    intro: "Un recorrido centrado en backend Java, Spring Boot y productos reales.",
     technologiesLabel: "Tecnologías",
   },
-  formation: {
-    label: "Mi recorrido académico",
-    title: "Formación",
-    columnTitle: "Formación",
+  projects: {
+    label: "04 · PROYECTOS",
+    title: "Proyectos full stack reales.",
+    intro:
+      "Aplicaciones web y asistentes inteligentes construidos con Java, Spring Boot, React e IA — asegurados, contenedorizados y desplegados.",
+    featuredBadge: "Proyecto principal",
+    links: {
+      code: "Código",
+      demo: "Demo en vivo",
+    },
   },
-  certifications: {
-    label: "Cualificaciones adicionales",
-    title: "Certificaciones e idiomas",
+  formation: {
+    label: "05 · FORMACIÓN Y CERTIFICACIONES",
+    title: "Formación y cualificaciones",
+    educationColumn: "Recorrido académico",
     certsTitle: "Certificaciones",
     languagesTitle: "Idiomas",
     personalSkillsTitle: "Habilidades personales",
   },
   contact: {
-    label: "Trabajemos juntos",
-    title: "Contáctame",
-    heading: "Hablemos de tu proyecto",
+    label: "06 · CONTACTO",
+    title: "Trabajemos juntos",
+    heading: "Hablemos de tu proyecto.",
     description:
-      "¿Tienes una oportunidad, una misión freelance o un proyecto que realizar? No dudes en contactarme.",
+      "¿Buscas un desarrollador backend Java o un desarrollador full stack para una misión, un contrato fijo o un proyecto Spring Boot? Conversemos.",
     email: "Correo electrónico",
     phone: "Teléfono",
     location: "Ubicación",
@@ -116,15 +137,15 @@ export const es: Translation = {
       subject: "Asunto",
       subjectPlaceholder: "Propuesta de colaboración",
       message: "Mensaje",
-      messagePlaceholder: "Escribe tu mensaje...",
+      messagePlaceholder: "Describe tu proyecto...",
       submit: "Enviar mensaje",
     },
   },
   footer: {
-    tagline: "Desarrollador Full Stack | Backend Java Spring Boot y Frontend React",
+    tagline: "Desarrollador backend Java y full stack — Spring Boot, React e IA.",
     navigation: "Navegación",
-    followMe: "Encuéntrame",
     builtWith: "Portafolio desarrollado con React",
+    backToTop: "Volver arriba",
   },
   notFound: {
     title: "Página no encontrada",

@@ -9,184 +9,110 @@ export const experience: Record<Lang, ExperienceData> = {
   fr: {
     items: [
       {
-        period: "Juillet  2026 – Septembre 2026",
-        role: " Security & Back-end Developper  — Projet de fin d'année",
-        company: "FirstFinTech Company",
+        period: "Juillet 2026 — Septembre 2026",
+        role: "Security & Back-End Developer — Projet de fin d'année",
+        company: "FirstFinTech",
         location: "Agadir, Maroc",
         description:
-          " Mise en place d'une plateforme intelligente GRC (Gouvernance, Risque et Conformité) , dans la partie compiliance et pentration test. ",
+          "Développement backend d'une plateforme intelligente GRC (Gouvernance, Risque et Conformité) : module conformité, sécurisation d'API REST et intégration de tests de pénétration.",
         technologies: [
           "Java",
           "Spring Boot",
-          
+          "Spring Security",
           "PostgreSQL",
-          "FastAPI",
           "Docker",
           "Kubernetes",
-         "Swagger", 
-         "rabbitMQ" 
+          "RabbitMQ",
+          "Swagger",
         ],
       },
-      
     ],
   },
   en: {
     items: [
       {
-        period: "February 2026 – June 2026",
-        role: "Software Engineer Intern — Final year project",
-        company: "Company Name",
-        location: "Sousse, Tunisia",
+        period: "July 2026 — September 2026",
+        role: "Security & Back-End Developer — Final year project",
+        company: "FirstFinTech",
+        location: "Agadir, Morocco",
         description:
-          "Design and development of an intelligent platform for detecting bank fraud and monitoring financial transactions.",
+          "Backend development of an intelligent GRC (Governance, Risk and Compliance) platform: compliance module, REST API security and penetration testing integration.",
         technologies: [
           "Java",
           "Spring Boot",
-          "Angular",
+          "Spring Security",
           "PostgreSQL",
-          "FastAPI",
           "Docker",
           "Kubernetes",
-          "Jenkins",
+          "RabbitMQ",
+          "Swagger",
         ],
-      },
-      {
-        period: "July 2025 – August 2025",
-        role: "Full Stack Developer Intern",
-        company: "Agency Name",
-        location: "Tunis, Tunisia",
-        description:
-          "Development of a student guidance platform integrating an intelligent chatbot to provide personalized recommendations.",
-        technologies: ["React.js", "Spring Boot", "PostgreSQL", "OpenAI API", "REST API"],
-      },
-      {
-        period: "July 2024 – August 2024",
-        role: "Web Developer Intern",
-        company: "Company Name",
-        location: "Sousse, Tunisia",
-        description:
-          "Development of a responsive e-commerce platform with navigation, product display and cart management.",
-        technologies: ["HTML5", "CSS3", "JavaScript"],
       },
     ],
   },
   es: {
     items: [
       {
-        period: "Febrero 2026 – Junio 2026",
-        role: "Ingeniero de Software en prácticas — Proyecto de fin de estudios",
-        company: "Company Name",
-        location: "Sousse, Túnez",
+        period: "Julio 2026 — Septiembre 2026",
+        role: "Desarrollador de Backend y Seguridad — Proyecto de fin de estudios",
+        company: "FirstFinTech",
+        location: "Agadir, Marruecos",
         description:
-          "Diseño y desarrollo de una plataforma inteligente de detección de fraudes bancarios y monitorización de transacciones financieras.",
+          "Desarrollo backend de una plataforma inteligente GRC (Gobernanza, Riesgo y Cumplimiento): módulo de cumplimiento, seguridad de APIs REST e integración de pruebas de penetración.",
         technologies: [
           "Java",
           "Spring Boot",
-          "Angular",
+          "Spring Security",
           "PostgreSQL",
-          "FastAPI",
           "Docker",
           "Kubernetes",
-          "Jenkins",
+          "RabbitMQ",
+          "Swagger",
         ],
-      },
-      {
-        period: "Julio 2025 – Agosto 2025",
-        role: "Desarrollador Full Stack en prácticas",
-        company: "Agency Name",
-        location: "Túnez, Túnez",
-        description:
-          "Desarrollo de una plataforma de orientación escolar con un chatbot inteligente para ofrecer recomendaciones personalizadas.",
-        technologies: ["React.js", "Spring Boot", "PostgreSQL", "OpenAI API", "API REST"],
-      },
-      {
-        period: "Julio 2024 – Agosto 2024",
-        role: "Desarrollador Web en prácticas",
-        company: "Company Name",
-        location: "Sousse, Túnez",
-        description:
-          "Desarrollo de una plataforma e-commerce responsiva con navegación, visualización de productos y gestión del carrito.",
-        technologies: ["HTML5", "CSS3", "JavaScript"],
       },
     ],
   },
   ar: {
     items: [
       {
-        period: "فبراير 2026 – يونيو 2026",
-        role: "متدرب هندسة برمجيات — مشروع التخرج",
-        company: "Company Name",
-        location: "سوسة، تونس",
+        period: "يوليوز 2026 — شتنبر 2026",
+        role: "مطوّر Backend وأمن — مشروع نهاية السنة",
+        company: "FirstFinTech",
+        location: "أكادير، المغرب",
         description:
-          "تصميم وتطوير منصة ذكية لكشف الاحتيال المصرفي ومراقبة المعاملات المالية.",
+          "تطوير الواجهة الخلفية لمنصة GRC ذكية (الحوكمة والمخاطر والامتثال): وحدة الامتثال، تأمين واجهات REST ودمج اختبارات الاختراق.",
         technologies: [
           "Java",
           "Spring Boot",
-          "Angular",
+          "Spring Security",
           "PostgreSQL",
-          "FastAPI",
           "Docker",
           "Kubernetes",
-          "Jenkins",
+          "RabbitMQ",
+          "Swagger",
         ],
-      },
-      {
-        period: "يوليو 2025 – أغسطس 2025",
-        role: "متدرب تطوير Full Stack",
-        company: "Agency Name",
-        location: "تونس، تونس",
-        description:
-          "تطوير منصة توجيه مدرسي تدمج روبوت محادثة ذكي لتقديم توصيات مخصصة.",
-        technologies: ["React.js", "Spring Boot", "PostgreSQL", "OpenAI API", "REST API"],
-      },
-      {
-        period: "يوليو 2024 – أغسطس 2024",
-        role: "متدرب تطوير ويب",
-        company: "Company Name",
-        location: "سوسة، تونس",
-        description:
-          "تطوير منصة تجارة إلكترونية متجاوبة مع تنقل وعرض منتجات وإدارة سلة.",
-        technologies: ["HTML5", "CSS3", "JavaScript"],
       },
     ],
   },
   tam: {
     items: [
       {
-        period: "Février 2026 – Juin 2026",
-        role: "ⴰⵏⵙⴻⵍⵎ software — ⴰⵙⴻⵏⴼⴰⵔ ⵏ ⵜⴰⴳⴳⴰⵔⴰ ⵏ ⴰⵙⴻⵍⵎⴻⴷ",
-        company: "Company Name",
-        location: "Sousse, Tunisie",
+        period: "Juillet 2026 — Septembre 2026",
+        role: "ⴰⵏⴻⴳⴳⴰⴼ ⵏ Backend ⴷ ⵜⴰⵎⴰⵏⵜ — ⴰⵙⴻⵏⴼⴰⵔ ⵏ ⵜⴳⵉⵔⴰ ⵏ ⴰⵙⴻⴳⴳⴰⵙ",
+        company: "FirstFinTech",
+        location: "ⴰⴳⴰⴷⵉⵔ, ⵍⵎⵖⵔⵉⴱ",
         description:
-          "ⴰⵙⵏⵓⵍⴼⵓ ⴷ ⴰⵙⵏⴼⵓ ⵏ plateforme ⵜⴰⵣⴳⵣⴰⵡⵜ ⵏ ⵓⴽⴻⵔⴹ ⵏ ⵜⵜⴰⵡⴰⵢⵉⵏ ⴷ ⵓⵡⵉⵍ ⵏ ⵜⵜⴰⵔⴰⵏⵙⵉⵜⵓⵎⵉⵏⵓⵙ ⵉⵇⴹⵉⵛⵉⵏ.",
+          "ⴰⵙⵏⴼⵓ ⵏ backend ⵏ plateforme ⵜⴰⵣⴳⵣⴰⵡⵜ GRC (Governance, Risk ⴷ Compliance): ⵜⴰⵎⵓⵔⵜ ⵏ compliance, ⴰⵙⴻⵔⵔⴻⵃ ⵏ APIs REST ⴷ ⵓⵣⴻⴷⴷⵓⴽⴻⵍ ⵏ ⵜⵉⴽⵙⴰⵢ ⵏ penetration.",
         technologies: [
           "Java",
           "Spring Boot",
-          "Angular",
+          "Spring Security",
           "PostgreSQL",
-          "FastAPI",
           "Docker",
           "Kubernetes",
-          "Jenkins",
+          "RabbitMQ",
+          "Swagger",
         ],
-      },
-      {
-        period: "Juillet 2025 – Août 2025",
-        role: "ⴰⵏⴻⴳⴳⴰⴼ Full Stack",
-        company: "Agency Name",
-        location: "Tunis, Tunisie",
-        description:
-          "ⴰⵙⵏⴼⵓ ⵏ plateforme ⵏ ⵓⵡⴰⵏⴻⴽ ⵏ ⵓⵙⵏⴽⵔⵓ ⵙ chatbot ⵢⴻⵙⵙⴻⵥⴳⴰⵏ ⵉⵡⴰⴽⴽⴻⵏ ⴰⴷ ⴷ-ⴷⵢⴻⴼⴽ ⵜⵉⵏⵛⵓⵎⵉⵏ ⵜⵉⵏⵓⴼⵉⵏ.",
-        technologies: ["React.js", "Spring Boot", "PostgreSQL", "OpenAI API", "API REST"],
-      },
-      {
-        period: "Juillet 2024 – Août 2024",
-        role: "ⴰⵏⴻⴳⴳⴰⴼ ⵡⴻⴱ",
-        company: "Company Name",
-        location: "Sousse, Tunisie",
-        description:
-          "ⴰⵙⵏⴼⵓ ⵏ plateforme ⵏ e-commerce ⵜⴻⵔⵉⴳⵉⵏ ⵙ ⵜⴰⵏⴻⴳⴳⴰⵔⵓⵜ, ⴰⵙⴼⴰⵎⵉ ⵏ ⵉⵎⴽⴻⵏ ⴷ ⵓⴼⵔⴰⴽ ⵏ panier.",
-        technologies: ["HTML5", "CSS3", "JavaScript"],
       },
     ],
   },

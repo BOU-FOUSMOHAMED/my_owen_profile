@@ -8,12 +8,10 @@ export const tam: Translation = {
     home: "ⴰⵏⴼⴰⵍⵓ",
     about: "ⵖⴻⴼ ⵉⵎⴰⵏⵉ",
     skills: "ⵜⵉⵎⵎⴰⴹⴹⵉⵏ",
-    projects: "ⵉⵙⴻⵏⴼⴰⵔⴻⵏ",
     experience: "ⴰⵅⴻⴷⴷⵉⵎ",
+    projects: "ⵉⵙⴻⵏⴼⴰⵔⴻⵏ",
     formation: "ⴰⵙⴻⵍⵎⴻⴷ",
-    certifications: "ⵜⵉⵛⴻⵔⵜⵉⴼⵉⴽⴰⵜⵉⵏ",
     contact: "ⴽⵓⵏⵜⴰⴽⵜ",
-    hireMe: "ⴽⵓⵏⵜⴰⴽⵜ",
   },
   theme: {
     toDark: "ⵖⴻⵔ ⴰⵙⴻⴽⴽⵉⵍ ⵉⴱⴻⵔⴽⴰⵏ",
@@ -23,108 +21,131 @@ export const tam: Translation = {
     label: "ⵙⵏⵉⴼⴻⵍ ⵜⵓⵜⵍⴰⵢⵜ",
   },
   hero: {
-    welcome: "ⴰⵏⵙⵓⴼ ⴰⵔ ⵓⵙⴻⴱⵜⴻⵔ ⵉⵏⵓ",
-    hello: "ⴰⵣⵓⵍ, ⵏⴻⴽⴽⵉ ⴷ",
-    title: "ⴰⵏⴻⴳⴳⴰⴼ Full Stack | Backend Java Spring Boot ⴷ Frontend React",
+    eyebrow: "ⵎⵓⵃⴰⵎⴻⴷ ⴱⵓ ⴼⵓⵙ · BACK END LEADER",
+    titleStart: "ⴰⵏⴻⴳⴳⴰⴼ full stack,",
+    titleHighlight: "Java Spring Boot",
+    titleEnd: " — backend ⴷ ⵜⴰⵄⵇⵉⵏⵜ ⵜⴰⵜⴼⵔⴰⵡⵉⵜ.",
     description:
-      "ⴰⵏⴻⴳⴳⴰⴼ Full Stack ⵢⴻⵍⵍⴰⵏ ⴷ ⴰⵙⵏⵉⵊⴻⵎ ⵖⴻⴼ Java Spring Boot ⵖⴻⴼ ⵉⴷⵉⵖ ⴷ React ⵖⴻⴼ Frontend. ⴰⵔⴰ-ⴷ ⵙⵙⵉⵟⴻⵏ ⵏ ⵡⵉⴱ ⵉⴼⴰⵍⴽⵉⵏ, ⵉⴼⴻⵙⵙⵏⴻⵏ ⴷ ⵉⵎⵏⴻⵙⴼⵉⵏ ⵙ ⵓⵙⵏⵜⴰⵔⴻⵏ ⴰⵜⵔⴰⵔ.",
-    viewProjects: "ⵡⴰⵍⵉ ⵉⵙⵏⴼⴰⵔⴻⵏ-ⵉⵏⵓ",
-    contactMe: "ⴽⵓⵏⵜⴰⴽⵜ-ⵉⵢⵉ",
-  },
-  about: {
-    label: "ⴰⵡⵉⴷ ⴰⵔ ⵓⵎⴰⵙⴰⵍ-ⵉⵏⵓ",
-    heading: "ⴰⵙⵏⴼⵓ Full Stack, ⵜⵉⵙⵏⴰⴼⴰⵔⵉⵏ ⵜⵉⵏⵓⵔⵎⴰⵡⵉⵏ ⴷ ⵜⵉⴼⵔⴰⵜⵉⵏ ⵉⴼⴰⵍⴽⵉⵏ",
-    intro:
-      "ⴰⵏⴻⴳⴳⴰⴼ Full Stack ⵢⴻⵙⵙⵏⴻⵏ Java, Spring Boot ⴷ React, ⴰⵔⴰ-ⴷ ⵙⵙⵉⵟⴻⵏ ⵏ ⵡⵉⴱ ⵉⴼⴰⵍⴽⵉⵏ, ⵉⵙⴻⵖⵏⴻⵏ ⴷ ⵉⵎⴻⵙⴼⵉⵏ.",
-    summary: [
-      "ⵎⵉ ⵉⵢⴰⴹⵓⵔ ⵜⵊⵉⵏⵉⵜ ⵏ software, ⵣⵔⵉ-ⴷ ⵜⵔⵉⵔⵉⵜ ⵜⴰⵣⵡⴰⵔⵓⵜ ⵖⴻⴼ ⵓⵙⵏⴼⵓ ⵏ backend (Java, Spring Boot, Node.js) ⴷ frontend (React, Angular, TypeScript).",
-      "ⵔⴻⴱⴱⵉⵖ ⵀⴰⵔⵔⵡⴻ ⵖⴻⴼ ⵉⵙⴻⵏⵜⵉⵔⴻⵏ ⵉⴼⴰⵍⴽⵉⵏ: ⵜⵉⵙⵏⴰⴼⴰⵔⵉⵏ ⵏ microservices, APIs REST ⵉⵙⴻⵖⵏⴻⵏ (Spring Security, JWT), ⵜⵉⴽⵙⴰⵢ, Docker, Kubernetes ⴷ pipelines ⵏ CI/CD.",
-      "ⵡⵉⴷ ⵉⵡⵓⵎⵉ ⵢⴻⵜⵃⴱⵉⴱ ⵜⵉⴼⵔⴰⵜⵉⵏ ⵜⵉⵅⴰⵜⴰⵔⵉⵏ ⴷ ⵓⵎⴰⵀⵉⵍ ⵖⴻⵔ ⵜⴰⵡⵙⵉⵜ ⵏ ⵜⵡⵓⵔⵉⵡⵉⵏ, ⵏⴻⵙⵓⵎⵎⵓⵔ ⴰⴷ ⴷ-ⴰⵡⵉⵏ ⵜⵉⵎⴻⵏⴷⵉⵡⵉⵏ ⵏ ⵜⵖⴰⵡⵍⴰ.",
+      "ⴰⵏⴻⴳⴳⴰⴼ backend ⵙ Java ⴷ ⴰⵏⴻⴳⴳⴰⴼ full stack, ⴰⵔⴰ-ⴷ ⵙⵙⴻⵏⵓⵍⴼⵓⵖ APIs REST ⴷ microservices ⵙ Spring Boot, ⴰⴼⴰⵔ React, ⴷ ⴰⴷ ⴷ ⵔⴻⵇⵇⴻⵇⴻⵖ ⵉⵎⴰⵡⴰⵡⵏ ⵏ ⵜⴰⵄⵇⵉⵏⵜ ⵜⴰⵜⴼⵔⴰⵡⵉⵜ ⴳ ⵜⵉⵙⴰⵏⴰⵏ ⵏ ⵡⵉⴱ ⵉⴼⴰⵍⴽⵉⵏ, ⵉⵙⴻⵖⵏⴻⵏ ⴷ ⵉⵎⵏⴻⵙⴼⵉⵏ.",
+    ctaPrimary: "ⵡⴰⵍⵉ ⵉⵙⴻⵏⴼⴰⵔⴻⵏ-ⵉⵏⵓ",
+    ctaSecondary: "ⴽⵓⵏⵜⴰⴽⵜ-ⵉⵢⵉ",
+    cardEyebrow: "ⵜⵉⵡⵉⵏⵙⵉⵜ ⵜⴰⵅⴰⵜⴰⵔⵜ",
+    focus: [
+      {
+        term: "Backend Java / Spring Boot",
+        detail: "APIs REST, microservices, Spring Security ⴷ JWT",
+      },
+      {
+        term: "ⴰⵙⵏⴼⵓ full stack",
+        detail: "React frontend ⵉⴼⵍⴻⵍⵍⴻⵏ ⵖⴻⵔ backend ⵉⵡⴰⵏⴰⵏ",
+      },
+      {
+        term: "ⵜⴰⵄⵇⵉⵏⵜ ⵜⴰⵜⴼⵔⴰⵡⵉⵜ",
+        detail: "Machine Learning ⴷ ⵓⵣⴻⴷⴷⵓⴽⴻⵍ ⵏ ⵉⵎⴰⵡⴰⵡⵏ ⵏ AI",
+      },
+      {
+        term: "DevOps ⴷ Cloud",
+        detail: "Docker, Kubernetes ⴷ pipelines ⵏ CI/CD",
+      },
+      {
+        term: "ⵜⵉⴱⴷⴰⵔⵉⵏ ⵏ ⵉⵙⵙⴻⴼⴽⴰⵎ",
+        detail: "PostgreSQL, MySQL, MongoDB ⴷ SQL Server",
+      },
     ],
-    highlights: [
-      "ⴰⵙⵏⴼⵓ ⵏ backend ⵙ Java, Spring Boot ⴷ Node.js",
-      "ⴰⵙⵏⴼⵓ ⵏ frontend ⵙ React, Angular ⴷ TypeScript",
-      "ⴰⵙⵏⵓⵍⴼⵓ ⴷ ⵓⵙⴻⵔⵔⴻⵃ ⵏ APIs REST ⵙ Spring Security ⴷ JWT",
-      "DevOps: Docker ⴷ Kubernetes ⴷ Jenkins ⴷ CI/CD",
-      "ⵜⵉⴱⴷⴰⵔⵉⵏ ⵏ ⵉⵙⵙⴻⴼⴽⴰⵎ: PostgreSQL ⴷ MySQL ⴷ MongoDB",
-      "ⴰⵎⴰⵀⵉⵍ ⵙ ⵓⵙⵇⵓⴼⵏ Agile (Scrum)",
-    ],
-    cards: {
-      formation: {
-        title: "ⴰⵙⴻⵍⵎⴻⴷ",
-        value: "ⴰⵏⵊⵉⵏⵉ ⴰⵎⴰⵙⵎⵉ",
-      },
-      specialty: {
-        title: "ⵜⵉⵡⵉⵏⵙⵉⵜ",
-        value: "Java, Spring Boot, React ⴷ ⵜⵉⵙⵏⴰⴼⴰⵔⵉⵏ ⵜⵉⵏⵓⵔⵎⴰⵡⵉⵏ",
-      },
-      ai: {
-        title: "ⵜⴰⵄⵇⵉⵏⵜ ⵜⴰⵜⴼⵔⴰⵡⵉⵜ",
-        value: "Machine Learning, XGBoost ⴷ AI",
-      },
-      goal: {
-        title: "ⴰⵙⴻⵖⵔⴻⵖ",
-        value: "ⵜⴰⴷⵉⵎⴻⵏⵏⴰ ⵢⴻⵇⵇⵉⵎⴻⵏ, ⵜⵡⵓⵔⵉⵡⵉⵏ freelance ⴷ ⵜⵎⴻⵔⵙⵜⵉⵜ",
-      },
+    stats: {
+      years: "1+",
+      projects: "5",
+      certs: "4+",
+      yearsLabel: "ⵉⵙⴻⴳⴳⴰⵙⵏ ⵏ ⵓⵙⴻⵏⴼⴻⵍ",
+      projectsLabel: "ⵉⵙⴻⵏⴼⴰⵔⵏ",
+      certsLabel: "ⵜⵉⵛⴻⵔⵜⵉⴼⵉⴽⴰⵜⵉⵏ",
     },
   },
-  skills: {
-    label: "ⵜⵉⵏⵣⴰⵏⵉⵏ ⴷ ⵜⵎⵓⵙⵏⵉⵢⵉⵏ-ⵉⵏⵓ",
-    title: "ⵜⵉⵎⵎⴰⴹⴹⵉⵏ-ⵉⵏⵓ ⵜⵉⵅⴰⵜⴰⵔⵉⵏ",
+  about: {
+    label: "01 · ⵜⴰⵖⴰⵔⴰ",
+    heading: "ⵜⵉⵎⵓⵙⵏⵉ ⵜⴻⵃⵉⵎ ⵖⴰⵢⵖⴰⵔ ⵉⵃⵉⵢⵢⴰⵏ ⵜⵓⵙⵙⴰⵏ ⴰⴷ ⵜⵓⵙⵉⵏ ⴰⴷⵉⵎⴰ.",
+    paragraph1:
+      "ⴰⵏⴻⴳⴳⴰⴼ backend ⴷ ⴰⵏⴻⴳⴳⴰⴼ full stack ⵢⴻⵜⵜⵓⵍⵎⴻⴷⵏ ⵜⵉⵊⵉⵏⵉⵜ ⵏ software, ⴰⵔ ⵜⵜⴰⵙⵎⵔⵉⵖ Java ⴷ Spring Boot i ⵓⵙⵏⵓⵍⴼⵓ ⵏ APIs REST ⴷ microservices, ⴷ React i ⵡⴰⴹⴰⵏ ⵉⵜⵔⴰⵔⵏ. ⵜⵉⵛⴻⵔⵜⵉⴼⵉⴽⴰⵜⵉⵏ ⵓⵔ ⵜⴻⵏⵜⵜ ⴰⵢⴻⵜ ⵏ ⵓⵎⴻⵏⵏⵉ: ⴰⵏ ⵣⴰⵍⵍⴰⵖ, ⴰⵏ ⴷ-ⵢⴻⵙⵙⴻⴼⵀⴻⵎ ⴷ ⴰⵏ ⵜⵜⴰⵙⵎⵔⴰⵖ ⵖⴻⴼ ⵉⵔⵓⵔ ⵉⵃⵇⵇⵉⵇⵏ.",
+    paragraph2:
+      "ⵜⵜⴰⵍⵙⵓⵖ ⴷ ⵢⴰⵜ ⵜⴻⴽⵏⵓⵍⵓⵊⵉⵜ ⴰⵔ ⵜⴼⴻⵃⵀⴻⵎ ⵉ ⵢⴰⵏ ⵓⵙⵖⵉⵔ ⵉⴼⴻⵃⵀⵉⵎⵏ. API, automatisation ⵏⴻⵖ ⵢⴰⵏ ⵓⵎⴰⵡⴰⵡ ⵏ AI ⵓⵔ ⵉⴹⵏⵓ ⵉ ⵍⵀⵉⵢ ⴰⵍⴰ ⵎⴽ ⵢⴻⴹⵏⴰ ⵜⵉⵡⵡⵓⵔⵉ, ⵢⴻⵖⵉⵎ ⴰⵎⵓⴽⵔⵉⵙ ⵏⴻⵖ ⵉⴳⴰ ⵖⴻⴼ ⵜⵃⴰⵊⴰ ⵜⴰⵃⵇⵉⵇⵜ — ⵙ ⵉⵙⴻⵏⵜⵉⵔⴻⵏ ⵉⵏⴻⴳ: ⵜⵉⴽⵙⴰⵢ, ⴰⵎⴰⵏ (Spring Security, JWT) ⴷ ⵓⴷⴻⴱⵍⵓⵎⴻⵏⵜ ⵓⵎⵄⵉⵏ.",
+    principlesTitle: "ⵉⵏⴻⴳ ⵉⵏⵓ",
+    principles: [
+      {
+        num: "01",
+        title: "ⴼⵀⴻⵎ",
+        text: "ⵍⵎⴻⴷ ⵎⴻⵏⵏⴽ ⵉⵜⵜⴻⴽⴽⴰ ⵓⵏⴳⵔⴰⵡ ⵓⵇⴱⴻⵍ ⴰⴷ ⵜ-ⵜⴱⴻⴷⴷⴻⵍⴷ ⵜ.",
+      },
+      {
+        num: "02",
+        title: "ⵙⵙⵎⵔ",
+        text: "ⴰⵖⴰ ⵙⴳ ⵜⵉⵣⵔⴰ ⵙ ⵉⵏⴳⵔⴰⵜⵏ ⴷ ⵉⴼⵔⴰⵔⵏ ⴷ ⵉⵙⵓⴼⴰ ⵉⵅⴰⵜⴰⵔⵏ.",
+      },
+      {
+        num: "03",
+        title: "ⵙⵏⵓⵜⴱⴻⵍ",
+        text: "ⵜⴰⴽⵏⵓⵍⵓⵊⵉⵜ ⵉⵍⵍⴰ ⴰⴷ ⴳ ⵜⴻⵏⵏⴰⵍⵉ ⴰⵎⵓⴽⵔⵉⵙ, ⵓⵔ ⴰⴷ ⵜ-ⵜⴻⵙⵙⵏⵓⴽⵏⵓ.",
+      },
+    ],
   },
-  projects: {
-    label: "ⵉⵙⵏⵓⵔⴼ ⵏ ⵜⵎⵓⴳⵔⴰⴷ-ⵉⵏⵓ",
-    title: "ⵉⵙⴻⵏⴼⴰⵔⴻⵏ ⵉⵎⵇⵔⴰⵏⴻⵏ",
-    featuredBadge: "ⴰⵙⴻⵏⴼⴰⵔ ⴰⴳⴻⵊⴷⴰⵏ",
-    github: "GitHub",
-    demo: "ⴰⵙⴻⵎⵏⵉⵔ",
+  skills: {
+    label: "02 · ⵜⵉⵎⵎⴰⴹⴹⵉⵏ",
+    title: "ⴰⴽⴰⴱⴰⵔ ⵏ ⵉⵎⴰⵙⵙⴰⵏ ⵏ ⵜⵡⵓⵔⵉ-ⵉⵏⵓ.",
+    intro:
+      "Backend, frontend, ⵜⵉⴱⴷⴰⵔⵉⵏ ⵏ ⵉⵙⵙⴻⴼⴽⴰⵎ, DevOps ⴷ ⵜⴰⵄⵇⵉⵏⵜ ⵜⴰⵜⴼⵔⴰⵡⵉⵜ: ⵜⵉⴽⵏⵓⵍⵓⵊⵉⵢⵉⵏ ⴰⵢ ⵙ ⵜⵜⴰⵔⴰⵖ ⴰⴷ ⵎⵙⴻⵔⵔⴻⵖ ⵜⵉⵙⴰⵏⴰⵏ ⵎⵄⴰⵏⵜ, ⵙⴳ API ⵏ Spring Boot ⴰⵔ React.",
   },
   experience: {
-    label: "ⴰⵙⴰⴽⵓⴷ-ⵉⵏⵓ ⴰⵣⴰⵎⴰⵥⵢⴰⵏ",
-    title: "ⴰⵅⴻⴷⴷⵉⵎ",
-    columnTitle: "ⴰⵅⴻⴷⴷⵉⵎ",
+    label: "03 · ⴰⵅⴻⴷⴷⵉⵎ",
+    title: "ⴰⵅⴻⴷⴷⵉⵎ ⴰⵣⴰⵎⴰⵥⵢⴰⵏ",
+    intro: "ⴰⵙⴰⴽⵓⴷ ⵉⵡⴰⵏⴰⵏ ⵖⴻⴼ backend ⵙ Java, Spring Boot ⴷ ⵉⵎⴻⵏⴷⴰⴳⴻⵏ ⵉⵃⵇⵇⵉⵇⵏ.",
     technologiesLabel: "ⵜⵉⴽⵏⵓⵍⵓⵊⵉⵏ",
   },
-  formation: {
-    label: "ⴰⵙⴰⴽⵓⴷ-ⵉⵏⵓ ⴰⵙⴻⵍⵎⴰⴷⴰⵏ",
-    title: "ⴰⵙⴻⵍⵎⴻⴷ",
-    columnTitle: "ⴰⵙⴻⵍⵎⴻⴷ",
+  projects: {
+    label: "04 · ⵉⵙⴻⵏⴼⴰⵔⴻⵏ",
+    title: "ⵉⵙⴻⵏⴼⴰⵔⴻⵏ ⵏ full stack ⵉⵃⵇⵇⵉⵇⵏ.",
+    intro:
+      "ⵜⵉⵙⴰⵏⴰⵏ ⵏ ⵡⵉⴱ ⴷ ⵉⵎⴰⵡⴰⵡⵏ ⵉⵎⵥⵉⵢⴰⵏⵏ ⵉⵜⵜⵓⵏⴼⴰⵏ ⵙ Java, Spring Boot, React ⴷ AI — ⵉⵙⴻⵖⵏⴻⵏ, ⵉⵥⴻⵍⴰⵍⴻⵏ ⴷ ⵢⴻⵜⵜⵓⴷⴻⴱⵍⴰⵏ.",
+    featuredBadge: "ⴰⵙⴻⵏⴼⴰⵔ ⴰⴳⴻⵊⴷⴰⵏ",
+    links: {
+      code: "Code",
+      demo: "Demo",
+    },
   },
-  certifications: {
-    label: "ⵜⵉⵃⵔⵓⴽⵉⵎ ⵜⵉⴻⴳⴳⴻⵜⵉⵢⵉⵏ",
-    title: "ⵜⵉⵛⴻⵔⵜⵉⴼⵉⴽⴰⵜⵉⵏ ⴷ ⵜⵓⵜⵍⴰⵢⵉⵏ",
+  formation: {
+    label: "05 · ⴰⵙⴻⵍⵎⴻⴷ ⴷ ⵜⵛⴻⵔⵜⵉⴼⵉⴽⴰⵜⵉⵏ",
+    title: "ⴰⵙⴻⵍⵎⴻⴷ ⴷ ⵜⵉⵃⵔⵓⴽⵉⵎ",
+    educationColumn: "ⴰⵙⴰⴽⵓⴷ ⴰⵙⴻⵍⵎⴰⴷⴰⵏ",
     certsTitle: "ⵜⵉⵛⴻⵔⵜⵉⴼⵉⴽⴰⵜⵉⵏ",
     languagesTitle: "ⵜⵓⵜⵍⴰⵢⵉⵏ",
     personalSkillsTitle: "ⵜⵉⵎⵎⴰⴹⴹⵉⵏ ⵜⵉⵓⵎⴰⵏⵉⵢⵉⵏ",
   },
   contact: {
-    label: "ⵏⵇⵓⴷⴷⵓ ⴷ ⵡⴻⴼⵓⵙ",
-    title: "ⴽⵓⵏⵜⴰⴽⵜ-ⵉⵢⵉ",
-    heading: "ⵎⵎⴻⵙⵍⴰⵢ ⵏⵜ ⵓⵡⵓⵔⵇⵉⴷ-ⵉⴽ",
+    label: "06 · ⴽⵓⵏⵜⴰⴽⵜ",
+    title: "ⵏⵇⵓⴷⴷⵓ ⴷ ⵡⴻⴼⵓⵙ",
+    heading: "ⵎⵎⴻⵙⵍⴰⵢ ⵏⵜ ⵓⵡⵓⵔⵇⵉⴷ-ⵉⴽ.",
     description:
-      "ⵜⵥⵓⵔⴰⵅ-ⴷ ⵜⴰⵎⴻⵔⵔⴰ, ⵜⵡⵓⵔⵉⵡⵉⵏ freelance ⵏⴻⵖ ⴰⵙⴻⵏⴼⴰⵔ ⵉⵡⴰⴽⴽⴻⵏ ⴰⴷ ⵜ-ⵙⵏⴻⵙⴳⴷⴻⵎ ? ⵜⵜⴰⵡⴰⵇ ⵖⴻⵔ ⴽⵓⵏⵜⴰⴽⵜ-ⵉⵢⵉ.",
+      "ⵉⵔⴰⴷ ⵜⴰⴼⴷ ⵢⴰⵏ ⵓⵏⴻⴳⴳⴰⴼ backend ⵙ Java ⵏⴻⵖ ⴰⵏⴻⴳⴳⴰⴼ full stack ⵉ ⵢⴰⵜ ⵜⵡⵓⵔⵉ, ⵢⴰⵏ ⵡⴰⵙⵙⴻⵏ ⵓⵔⵎⵉⷧ, ⵏⴻⵖ ⵢⴰⵏ ⵓⵙⴻⵏⴼⴰⵔ ⵙ Spring Boot ? ⵎⵎⴻⵙⵍⴰⵢ.",
     email: "ⵉⵎⴻⵍ",
     phone: "ⵓⵜⵉⴼⵓⵏ",
-    location: "ⴰⴷⵔⴰⵔⴻ",
+    location: "ⴰⴷⵔⴰⵔ",
     linkedin: "LinkedIn",
     github: "GitHub",
     form: {
       name: "ⵉⵙⵎ ⵓⵎⵎⵉⴷ",
       namePlaceholder: "ⵉⵙⵎ-ⵉⴽ",
       email: "ⵉⵎⴻⵍ ⴰⴷⵔⵉⵙ",
-      emailPlaceholder: "kecc@email.com",
+      emailPlaceholder: "you@email.com",
       subject: "ⴰⵙⴻⵏⵜⴻⵍ",
       subjectPlaceholder: "ⴰⵙⴻⵏⵏⴰⴼ ⵏ ⵓⵎⴻⵔⴽⴰⵣ",
       message: "ⵜⵓⵣⵜⵉⵏ",
-      messagePlaceholder: "ⴰⵔⴰ ⵜⵓⵣⵜⵉⵏ-ⵉⴽ...",
-      submit: "ⴰⵣⴻⵏ ⵜⵓⵢⵉⵏ",
+      messagePlaceholder: "ⵙⴼⵓ ⴰⴷ ⵡⴰⵍⴰⵏ ⴰⵙⴻⵏⴼⴰⵔ-ⵉⴽ...",
+      submit: "ⴰⵣⴻⵏ ⵜⵓⵣⵜⵉⵏ",
     },
   },
   footer: {
-    tagline: "ⴰⵏⴻⴳⴳⴰⴼ Full Stack | Backend Java Spring Boot ⴷ Frontend React",
+    tagline: "ⴰⵏⴻⴳⴳⴰⴼ backend ⵙ Java ⴷ full stack — Spring Boot, React ⴷ AI.",
     navigation: "ⴰⵏⴰⵜⴰⵍⵍⵉⵢⵉⵏ",
-    followMe: "ⴰⴼ-ⵉⵢⵉ",
-    builtWith: "ⴰⵙⴻⴱⵜⴻⵔ ⵜⵉⴱⴱⵉⵔ ⵙ React",
+    builtWith: "ⴰⵙⴻⴱⵜⴻⵔ ⵉⵜⵜⵓⴱⵏⴰ ⵙ React",
+    backToTop: "ⵖⴻⵔ ⵓⴼⵍⵍⴰ",
   },
   notFound: {
     title: "ⴰⵙⴻⴱⵜⴻⵔ ⵓⵔ ⵢⴻⵜⵜⵓⵔⴰⴷ",

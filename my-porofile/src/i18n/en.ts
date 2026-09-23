@@ -8,12 +8,10 @@ export const en: Translation = {
     home: "Home",
     about: "About",
     skills: "Skills",
-    projects: "Projects",
     experience: "Experience",
+    projects: "Projects",
     formation: "Education",
-    certifications: "Certifications",
     contact: "Contact",
-    hireMe: "Contact",
   },
   theme: {
     toDark: "Switch to dark mode",
@@ -23,86 +21,109 @@ export const en: Translation = {
     label: "Change language",
   },
   hero: {
-    welcome: "Welcome to my portfolio",
-    hello: "Hello, I am",
-    title: "Full Stack Developer | Java Spring Boot Backend & React Frontend",
+    eyebrow: "MOHAMED BOU-FOUS · BACK END LEADER",
+    titleStart: "Full stack developer,",
+    titleHighlight: "Java Spring Boot",
+    titleEnd: " — backend & AI.",
     description:
-      "Full Stack developer specialized in Java Spring Boot backend and React frontend development. I build performant, secure and maintainable web applications with modern architectures.",
-    viewProjects: "View my projects",
-    contactMe: "Contact me",
-  },
-  about: {
-    label: "Discover my profile",
-    heading: "Full Stack development, modern architectures and high-performance solutions",
-    intro:
-      "Full Stack developer specialized in Java, Spring Boot and React, I build performant, secure and maintainable web applications.",
-    summary: [
-      "Passionate about software engineering, I have solid experience in backend development (Java, Spring Boot, Node.js) and frontend (React, Angular, TypeScript).",
-      "I strongly value best practices: microservices architecture, secure REST APIs (Spring Security, JWT), testing, Docker containerization, Kubernetes orchestration and CI/CD pipelines.",
-      "Curious and rigorous, I enjoy tackling technical challenges and collaborating within agile teams to deliver quality products.",
+      "Java backend developer and full stack developer, I design REST APIs and microservices with Spring Boot, React frontends, and integrate AI assistants into performant, secure and maintainable web applications.",
+    ctaPrimary: "Explore my projects",
+    ctaSecondary: "Contact me",
+    cardEyebrow: "TECHNICAL FOCUS",
+    focus: [
+      {
+        term: "Backend Java / Spring Boot",
+        detail: "REST APIs, microservices, Spring Security and JWT",
+      },
+      {
+        term: "Full stack development",
+        detail: "React frontend wired to a robust backend, end to end",
+      },
+      {
+        term: "Artificial intelligence",
+        detail: "Machine Learning and AI assistant integration",
+      },
+      {
+        term: "DevOps & Cloud",
+        detail: "Docker, Kubernetes and CI/CD pipelines",
+      },
+      {
+        term: "Databases",
+        detail: "PostgreSQL, MySQL, MongoDB and SQL Server",
+      },
     ],
-    highlights: [
-      "Backend development with Java, Spring Boot and Node.js",
-      "Frontend development with React, Angular and TypeScript",
-      "Design and security of REST APIs with Spring Security and JWT",
-      "DevOps: Docker, Kubernetes, Jenkins, CI/CD",
-      "Databases: PostgreSQL, MySQL, MongoDB",
-      "Agile methodologies (Scrum)",
-    ],
-    cards: {
-      formation: {
-        title: "Education",
-        value: "Software Engineering Engineer",
-      },
-      specialty: {
-        title: "Specialty",
-        value: "Java, Spring Boot, React and modern architectures",
-      },
-      ai: {
-        title: "Artificial Intelligence",
-        value: "Machine Learning, XGBoost and Generative AI",
-      },
-      goal: {
-        title: "Goal",
-        value: "Full-time job, freelance missions and collaborations",
-      },
+    stats: {
+      years: "1+",
+      projects: "5",
+      certs: "4+",
+      yearsLabel: "Years of experience",
+      projectsLabel: "Projects delivered",
+      certsLabel: "Certifications",
     },
   },
-  skills: {
-    label: "Technologies and expertise",
-    title: "My technical skills",
+  about: {
+    label: "01 · MINDSET",
+    heading: "Knowledge matters when it can be applied.",
+    paragraph1:
+      "Backend developer and full stack developer trained in software engineering, I use Java and Spring Boot to build secure REST APIs and microservices, and React for modern interfaces. Titles and certifications are not the end goal: what matters is what you understand, can explain, and apply to real problems.",
+    paragraph2:
+      "I believe technology should serve a clear purpose. An API, an automation or an AI assistant only makes sense when it improves a process, reduces friction or solves a real need — with best practices: testing, security (Spring Security, JWT) and automated deployment.",
+    principlesTitle: "My principles",
+    principles: [
+      {
+        num: "01",
+        title: "Understand",
+        text: "Learn how the system works before changing it.",
+      },
+      {
+        num: "02",
+        title: "Apply",
+        text: "Turn theory into decisions, solutions and real products.",
+      },
+      {
+        num: "03",
+        title: "Simplify",
+        text: "Technology should reduce complexity, not create more of it.",
+      },
+    ],
   },
-  projects: {
-    label: "My achievements",
-    title: "Main projects",
-    featuredBadge: "Main project",
-    github: "GitHub",
-    demo: "Live demo",
+  skills: {
+    label: "02 · SKILLS",
+    title: "My developer toolkit.",
+    intro:
+      "Backend, frontend, databases, DevOps and artificial intelligence: the technologies I use to deliver complete applications, from the Spring Boot API to the React interface.",
   },
   experience: {
-    label: "My professional journey",
+    label: "03 · EXPERIENCE",
     title: "Professional experience",
-    columnTitle: "Professional experience",
+    intro: "A career focused on Java backend, Spring Boot and real products.",
     technologiesLabel: "Technologies",
   },
-  formation: {
-    label: "My academic background",
-    title: "Education",
-    columnTitle: "Education",
+  projects: {
+    label: "04 · PROJECTS",
+    title: "Real full stack projects.",
+    intro:
+      "Web applications and smart assistants built with Java, Spring Boot, React and AI — secured, containerized and deployed.",
+    featuredBadge: "Main project",
+    links: {
+      code: "Source code",
+      demo: "Live demo",
+    },
   },
-  certifications: {
-    label: "Additional qualifications",
-    title: "Certifications and languages",
+  formation: {
+    label: "05 · EDUCATION & CERTIFICATIONS",
+    title: "Education and qualifications",
+    educationColumn: "Academic background",
     certsTitle: "Certifications",
     languagesTitle: "Languages",
     personalSkillsTitle: "Personal skills",
   },
   contact: {
-    label: "Let's work together",
-    title: "Contact me",
-    heading: "Let's talk about your project",
+    label: "06 · CONTACT",
+    title: "Let's work together",
+    heading: "Let's talk about your project.",
     description:
-      "Do you have an opportunity, a freelance mission or a project to build? Feel free to contact me.",
+      "Looking for a Java backend developer or a full stack developer for a mission, a full-time role or a Spring Boot project? Let's talk.",
     email: "Email",
     phone: "Phone",
     location: "Location",
@@ -116,15 +137,15 @@ export const en: Translation = {
       subject: "Subject",
       subjectPlaceholder: "Collaboration proposal",
       message: "Message",
-      messagePlaceholder: "Write your message...",
+      messagePlaceholder: "Describe your project...",
       submit: "Send message",
     },
   },
   footer: {
-    tagline: "Full Stack Developer | Java Spring Boot Backend & React Frontend",
+    tagline: "Java backend and full stack developer — Spring Boot, React and AI.",
     navigation: "Navigation",
-    followMe: "Find me",
     builtWith: "Portfolio built with React",
+    backToTop: "Back to top",
   },
   notFound: {
     title: "Page not found",
