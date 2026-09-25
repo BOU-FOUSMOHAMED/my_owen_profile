@@ -1,10 +1,13 @@
-import { Briefcase, MapPin, Calendar, Building2, Cpu } from "lucide-react";
+import { useState } from "react";
+import { Briefcase, MapPin, Calendar, Building2, Cpu, Workflow } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
 import { experience } from "../data/experience";
+import ExperienceModal from "./ExperienceModal";
 
 export default function Experience() {
   const { t, lang } = useLanguage();
   const items = experience[lang].items;
+  const [open, setOpen] = useState(false);
 
   return (
     <section className="ui-section" id="experience">
@@ -14,6 +17,16 @@ export default function Experience() {
           <h2 className="text-[clamp(2rem,4.6vw,3.05rem)]">{t.experience.title}</h2>
           <div className="ui-line" />
         </div>
+
+        <button
+          type="button"
+          onClick={() => setOpen(true)}
+          aria-haspopup="dialog"
+          className="mb-8 inline-flex items-center gap-1.5 rounded-[11px] border border-line-strong px-4 py-2.5 text-[0.82rem] font-bold text-accent transition hover:border-transparent hover:bg-grad hover:text-white hover:shadow-[var(--btn-glow-sm)]"
+        >
+          <Workflow size={15} aria-hidden="true" />
+          {t.experience.tourBtn}
+        </button>
 
         <div className="timeline relative grid gap-7 before:absolute before:bottom-2.5 before:left-[23px] before:top-2.5 before:w-[3px] before:rounded-full before:bg-gradient-to-b before:from-accent-light before:via-accent before:to-accent-light before:opacity-45 max-sm:before:left-4 rtl:before:left-auto rtl:before:right-[23px] max-sm:rtl:before:right-4">
           {items.map((exp, i) => (
@@ -82,6 +95,14 @@ export default function Experience() {
           ))}
         </div>
       </div>
+
+      {open && (
+        <ExperienceModal
+          items={items}
+          t={t.experience}
+          onClose={() => setOpen(false)}
+        />
+      )}
     </section>
   );
 }

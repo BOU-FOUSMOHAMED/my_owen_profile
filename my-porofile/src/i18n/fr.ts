@@ -12,6 +12,7 @@ export const fr: Translation = {
     projects: "Projets",
     formation: "Formation",
     contact: "Contact",
+    blog: "Blog",
   },
   theme: {
     toDark: "Passer en mode sombre",
@@ -22,22 +23,24 @@ export const fr: Translation = {
   },
   hero: {
     eyebrow: "MOHAMED BOU-FOUS · BACK END LEADER",
-    titleStart: "Développeur full stack",
-    titleHighlight: "Java Spring Boot",
-    titleEnd: " — backend & IA.",
+    titleStart: "BACK-END STACK",
+    titleHighlight: "DEVELOPER",
+    titleEnd: "",
+    subtitle: "Java · Spring Boot · Cybersecurity · DevOps · IA",
     description:
       "Développeur backend Java et développeur full stack, je conçois des API REST et des microservices avec Spring Boot, des interfaces React, et j'intègre des assistants IA dans des applications web performantes, sécurisées et maintenables.",
     ctaPrimary: "Explorer mes projets",
     ctaSecondary: "Me contacter",
     cardEyebrow: "ORIENTATION TECHNIQUE",
+    cardNote: "composants réutilisables, hooks et intégration API.",
     focus: [
       {
         term: "Backend Java / Spring Boot",
-        detail: "API REST, microservices, Spring Security et JWT",
+        detail: "Architecture robuste de microservices, API REST, Spring Cloud et Spring Security",
       },
       {
-        term: "Développement full stack",
-        detail: "Frontend React relié à un backend robuste, de bout en bout",
+        term: "Développement front end",
+        detail: "Interfaces React modernes et interactives, reliées à un backend robuste",
       },
       {
         term: "Intelligence artificielle",
@@ -49,7 +52,11 @@ export const fr: Translation = {
       },
       {
         term: "Bases de données",
-        detail: "PostgreSQL, MySQL, MongoDB et SQL Server",
+        detail: "PostgreSQL, MySQL et SQL Server",
+      },
+      {
+        term: "Cyber sécurité / Pentest",
+        detail: "Pen tester, recon, analyse de vulnérabilités et remédiation",
       },
     ],
     stats: {
@@ -98,6 +105,12 @@ export const fr: Translation = {
     title: "Expérience professionnelle",
     intro: "Un parcours orienté backend Java, Spring Boot et produits concrets.",
     technologiesLabel: "Technologies",
+    tourBtn: "Parcourir l'expérience",
+    tourHead: "Parcours de l'expérience",
+    stepLabel: "Étape",
+    prev: "Précédent",
+    next: "Suivant",
+    close: "Fermer",
   },
   projects: {
     label: "04 · PROJETS",
@@ -109,6 +122,16 @@ export const fr: Translation = {
       code: "Code source",
       demo: "Démo en ligne",
     },
+    architectureBtn: "Explorer l'architecture",
+    mapHead: "Parcours détaillé du projet",
+    detailHead: "Étape détaillée",
+    stepLabel: "Étape",
+    howHead: "Comment c'est construit",
+    problemsHead: "Problèmes rencontrés",
+    solutionsHead: "Solutions apportées",
+    prev: "Précédent",
+    next: "Suivant",
+    close: "Fermer",
   },
   formation: {
     label: "05 · FORMATION & CERTIFICATIONS",
@@ -151,5 +174,23 @@ export const fr: Translation = {
     title: "Page introuvable",
     message: "La page demandée n'existe pas ou a été déplacée.",
     backHome: "Retour à l'accueil",
+  },
+  blog: {
+    label: "LE BLOG",
+    title: "Articles & réflexions",
+    intro:
+      "Des articles autour des trois piliers qui constituent mon métier : développement backend, DevOps et sécurité.",
+    all: "Tous",
+    dev: "Développement",
+    devops: "DevOps",
+    security: "Sécurité",
+    back: "Retour à l'accueil",
+    search: "Rechercher",
+    searchPlaceholder: "Rechercher un article, un tag…",
+    noResults: "Aucun article ne correspond à votre recherche.",
+    readMore: "Lire l'article",
+    prev: "Page précédente",
+    next: "Page suivante",
+    publishedOn: "Publié le",
   },
 };

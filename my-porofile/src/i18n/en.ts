@@ -12,6 +12,7 @@ export const en: Translation = {
     projects: "Projects",
     formation: "Education",
     contact: "Contact",
+    blog: "Blog",
   },
   theme: {
     toDark: "Switch to dark mode",
@@ -22,22 +23,24 @@ export const en: Translation = {
   },
   hero: {
     eyebrow: "MOHAMED BOU-FOUS · BACK END LEADER",
-    titleStart: "Full stack developer,",
-    titleHighlight: "Java Spring Boot",
-    titleEnd: " — backend & AI.",
+    titleStart: "BACK-END STACK",
+    titleHighlight: "DEVELOPER",
+    titleEnd: "",
+    subtitle: "Java · Spring Boot · Cybersecurity · DevOps · AI",
     description:
       "Java backend developer and full stack developer, I design REST APIs and microservices with Spring Boot, React frontends, and integrate AI assistants into performant, secure and maintainable web applications.",
     ctaPrimary: "Explore my projects",
     ctaSecondary: "Contact me",
     cardEyebrow: "TECHNICAL FOCUS",
+    cardNote: "reusable components, hooks and clean API integration.",
     focus: [
       {
         term: "Backend Java / Spring Boot",
-        detail: "REST APIs, microservices, Spring Security and JWT",
+        detail: "Robust microservices architecture, REST APIs, Spring Cloud and Spring Security",
       },
       {
-        term: "Full stack development",
-        detail: "React frontend wired to a robust backend, end to end",
+        term: "Front end development",
+        detail: "Modern, interactive React UIs wired to a robust backend",
       },
       {
         term: "Artificial intelligence",
@@ -49,7 +52,11 @@ export const en: Translation = {
       },
       {
         term: "Databases",
-        detail: "PostgreSQL, MySQL, MongoDB and SQL Server",
+        detail: "PostgreSQL, MySQL and SQL Server",
+      },
+      {
+        term: "Cybersecurity / Pentest",
+        detail: "Pen tester, recon, vulnerability assessment and remediation",
       },
     ],
     stats: {
@@ -98,6 +105,12 @@ export const en: Translation = {
     title: "Professional experience",
     intro: "A career focused on Java backend, Spring Boot and real products.",
     technologiesLabel: "Technologies",
+    tourBtn: "Explore the experience",
+    tourHead: "Career path",
+    stepLabel: "Step",
+    prev: "Previous",
+    next: "Next",
+    close: "Close",
   },
   projects: {
     label: "04 · PROJECTS",
@@ -109,6 +122,16 @@ export const en: Translation = {
       code: "Source code",
       demo: "Live demo",
     },
+    architectureBtn: "Explore the architecture",
+    mapHead: "Project tour",
+    detailHead: "Step details",
+    stepLabel: "Step",
+    howHead: "How it's built",
+    problemsHead: "Problems faced",
+    solutionsHead: "Solutions applied",
+    prev: "Previous",
+    next: "Next",
+    close: "Close",
   },
   formation: {
     label: "05 · EDUCATION & CERTIFICATIONS",
@@ -151,5 +174,23 @@ export const en: Translation = {
     title: "Page not found",
     message: "The requested page does not exist or has been moved.",
     backHome: "Back to home",
+  },
+  blog: {
+    label: "THE BLOG",
+    title: "Articles & insights",
+    intro:
+      "Articles around the three pillars of my craft: backend development, DevOps and security.",
+    all: "All",
+    dev: "Development",
+    devops: "DevOps",
+    security: "Security",
+    back: "Back to home",
+    search: "Search",
+    searchPlaceholder: "Search an article, a tag…",
+    noResults: "No article matches your search.",
+    readMore: "Read article",
+    prev: "Previous page",
+    next: "Next page",
+    publishedOn: "Published on",
   },
 };

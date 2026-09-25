@@ -36,8 +36,51 @@ export interface CertificationItem {
   issuer: string;
 }
 
+export type ProjectPhaseIcon =
+  | "monitor"
+  | "api"
+  | "shield"
+  | "brain"
+  | "database"
+  | "cloud"
+  | "bot"
+  | "card"
+  | "layers"
+  | "zap"
+  | "book";
+
+export interface ProjectPhase {
+  icon: ProjectPhaseIcon;
+  tag: string;
+  title: string;
+  how: string;
+  problems: string[];
+  solutions: string[];
+  tech: string[];
+}
+
 export interface LanguageItem {
   name: string;
   level: string;
   percentage: number;
+}
+
+export type BlogCategory = "dev" | "devops" | "security";
+
+export interface BlogBlock {
+  flow?: { label: string }[];
+  codeLang?: string;
+  code?: string[];
+}
+
+export interface BlogPost {
+  slug: string;
+  category: BlogCategory;
+  date: string;
+  readTime: string;
+  title: string;
+  excerpt: string;
+  tags: string[];
+  content: string[];
+  blocks?: BlogBlock[];
 }

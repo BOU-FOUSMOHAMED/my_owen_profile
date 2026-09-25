@@ -1,11 +1,19 @@
+import { useState, type KeyboardEvent } from "react";
 import { useLanguage } from "../context/LanguageContext";
 import { projects } from "../data/projects";
-import { GitBranch, ExternalLink } from "lucide-react";
+import { projectSchema } from "../data/projectSchema";
+import ProjectModal from "./ProjectModal";
+import { GitBranch, ExternalLink, Workflow } from "lucide-react";
 
 export default function Projects() {
   const { t, lang } = useLanguage();
-  const { label, title, intro, featuredBadge, links } = t.projects;
+  const { label, title, intro, featuredBadge, links, architectureBtn } = t.projects;
   const items = projects[lang].items;
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+
+  const selected = selectedIndex !== null ? items[selectedIndex] : undefined;
+  const selectedPhases =
+    selected && selectedIndex !== null ? (projectSchema[lang][selected.title] ?? []) : [];
 
   return (
     <section className="ui-section ui-section--soft" id="projects">
@@ -24,7 +32,17 @@ export default function Projects() {
             return (
               <article
                 key={project.title}
-                className={`group relative flex gap-4 rounded-card border bg-card p-[26px] transition hover:translate-x-[6px] hover:border-accent hover:shadow-glow max-sm:flex-col rtl:hover:-translate-x-[6px] ${
+                onClick={() => setSelectedIndex(index)}
+                onKeyDown={(e: KeyboardEvent<HTMLElement>) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    setSelectedIndex(index);
+                  }
+                }}
+                tabIndex={0}
+                role="button"
+                aria-haspopup="dialog"
+                className={`group relative flex cursor-pointer gap-4 rounded-card border bg-card p-[26px] transition hover:translate-x-[6px] hover:border-accent hover:shadow-glow max-sm:flex-col rtl:hover:-translate-x-[6px] ${
                   isFeatured ? "border-accent" : "border-line"
                 }`}
               >
@@ -63,6 +81,7 @@ export default function Projects() {
                           href={project.githubUrl}
                           target="_blank"
                           rel="noreferrer"
+                          onClick={(e) => e.stopPropagation()}
                           aria-label={links.code}
                           title={links.code}
                           className="inline-flex items-center gap-1.5 rounded-[10px] border border-line-strong px-3.5 py-2 text-[0.8rem] font-bold text-accent transition hover:border-transparent hover:bg-grad hover:text-white"
@@ -76,6 +95,7 @@ export default function Projects() {
                           href={project.liveUrl}
                           target="_blank"
                           rel="noreferrer"
+                          onClick={(e) => e.stopPropagation()}
                           aria-label={links.demo}
                           title={links.demo}
                           className="inline-flex items-center gap-1.5 rounded-[10px] border border-line-strong px-3.5 py-2 text-[0.8rem] font-bold text-accent transition hover:border-transparent hover:bg-grad hover:text-white"
@@ -86,6 +106,18 @@ export default function Projects() {
                       )}
                     </div>
                   )}
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setSelectedIndex(index);
+                    }}
+                    aria-haspopup="dialog"
+                    className="mt-4 inline-flex w-fit items-center gap-1.5 rounded-[10px] border border-line-strong px-3.5 py-2 text-[0.8rem] font-bold text-accent transition hover:border-transparent hover:bg-grad hover:text-white hover:shadow-[var(--btn-glow-sm)]"
+                  >
+                    <Workflow size={15} aria-hidden="true" />
+                    <span>{architectureBtn}</span>
+                  </button>
                 </div>
               </article>
             );
@@ -98,6 +130,16 @@ export default function Projects() {
           </a>
         </div>
       </div>
+
+      {selected && selectedIndex !== null && (
+        <ProjectModal
+          project={selected}
+          index={selectedIndex}
+          phases={selectedPhases}
+          t={t.projects}
+          onClose={() => setSelectedIndex(null)}
+        />
+      )}
     </section>
   );
 }

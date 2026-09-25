@@ -74,7 +74,7 @@ const TECHS: Tech[] = [
   { Icon: SiPandas, name: "Pandas", color: "#8C7BFF" },
   { Icon: SiScikitlearn, name: "scikit-learn", color: "#F7931E" },
   { Icon: SiTensorflow, name: "TensorFlow", color: "#FF6F00" },
-  { Icon: Database, name: "SQL Server", color: "#60a5fa" },
+  { Icon: Database, name: "SQL Server", color: "#b08b5e" },
   { Icon: SiPostgresql, name: "PostgreSQL", color: "#4169E1" },
   { Icon: SiMysql, name: "MySQL", color: "#4479A1" },
   { Icon: SiMongodb, name: "MongoDB", color: "#47A248" },

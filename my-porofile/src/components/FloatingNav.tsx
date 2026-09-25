@@ -180,7 +180,7 @@ export default function FloatingNav({ items, active, onNavigate }: FloatingNavPr
                         aria-current={isActive ? "page" : undefined}
                         className={`flex w-full items-center gap-3 rounded-xl px-3.5 py-3 text-start text-[0.92rem] font-semibold transition ${
                           isActive
-                            ? "bg-grad text-white shadow-[0_8px_22px_rgba(37,99,235,0.35)]"
+                            ? "bg-grad text-white shadow-[var(--btn-glow)]"
                             : "text-muted hover:bg-badge hover:text-accent"
                         }`}
                       >
@@ -205,7 +205,7 @@ export default function FloatingNav({ items, active, onNavigate }: FloatingNavPr
           onPointerMove={handlePointerMove}
           onPointerUp={handlePointerEnd}
           onPointerCancel={handlePointerEnd}
-          className="relative grid size-14 touch-none place-items-center rounded-2xl border border-line bg-grad text-white shadow-[0_10px_26px_rgba(37,99,235,0.4)] transition hover:scale-[1.04] active:scale-95"
+          className="relative grid size-14 touch-none place-items-center rounded-2xl border border-line bg-grad text-white shadow-[var(--btn-glow)] transition hover:scale-[1.04] active:scale-95"
           style={{ cursor: dragging ? "grabbing" : "grab" }}
         >
           {open ? <X size={22} /> : <Menu size={22} aria-hidden="true" />}

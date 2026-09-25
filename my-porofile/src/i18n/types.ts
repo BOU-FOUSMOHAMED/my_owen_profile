@@ -21,6 +21,7 @@ export interface Translation {
     projects: string;
     formation: string;
     contact: string;
+    blog: string;
   };
   theme: {
     toDark: string;
@@ -34,10 +35,12 @@ export interface Translation {
     titleStart: string;
     titleHighlight: string;
     titleEnd: string;
+    subtitle: string;
     description: string;
     ctaPrimary: string;
     ctaSecondary: string;
     cardEyebrow: string;
+    cardNote: string;
     focus: FocusItem[];
     stats: {
       years: string;
@@ -66,6 +69,12 @@ export interface Translation {
     title: string;
     intro: string;
     technologiesLabel: string;
+    tourBtn: string;
+    tourHead: string;
+    stepLabel: string;
+    prev: string;
+    next: string;
+    close: string;
   };
   projects: {
     label: string;
@@ -76,6 +85,16 @@ export interface Translation {
       code: string;
       demo: string;
     };
+    architectureBtn: string;
+    mapHead: string;
+    detailHead: string;
+    stepLabel: string;
+    howHead: string;
+    problemsHead: string;
+    solutionsHead: string;
+    prev: string;
+    next: string;
+    close: string;
   };
   formation: {
     label: string;
@@ -117,5 +136,22 @@ export interface Translation {
     title: string;
     message: string;
     backHome: string;
+  };
+  blog: {
+    label: string;
+    title: string;
+    intro: string;
+    all: string;
+    dev: string;
+    devops: string;
+    security: string;
+    back: string;
+    search: string;
+    searchPlaceholder: string;
+    noResults: string;
+    readMore: string;
+    prev: string;
+    next: string;
+    publishedOn: string;
   };
 }

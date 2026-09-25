@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import type { MouseEvent } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import type { LucideIcon } from "lucide-react";
 import {
   Sun,
@@ -11,12 +12,14 @@ import {
   FolderGit2,
   GraduationCap,
   Mail,
+  Newspaper,
 } from "lucide-react";
 import { personal } from "../data/personal";
 import { useTheme } from "../context/ThemeContext";
 import { useLanguage } from "../context/LanguageContext";
 import LanguageSwitcher from "./LanguageSwitcher";
 import FloatingNav from "./FloatingNav";
+import { goToSection } from "../lib/section";
 
 const NAV_IDS = ["home", "about", "skills", "experience", "projects", "formation", "contact"];
 
@@ -32,6 +35,9 @@ export default function Navbar() {
   const [scrollProgress, setScrollProgress] = useState(0);
   const { theme, toggleTheme } = useTheme();
   const { t } = useLanguage();
+  const location = useLocation();
+  const navigate = useNavigate();
+  const isBlog = location.pathname === "/blog";
 
   const navLinks: NavLinkItem[] = [
     { label: t.nav.home, href: "#home", icon: Home },
@@ -86,9 +92,7 @@ export default function Navbar() {
 
   const scrollToSection = (href: string) => {
     setActive(href);
-    const el = document.getElementById(href.slice(1));
-    el?.scrollIntoView({ behavior: "smooth", block: "start" });
-    window.history.replaceState(null, "", href);
+    goToSection(navigate, location.pathname, href);
   };
 
   const handleNavClick = (e: MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -120,6 +124,48 @@ export default function Navbar() {
           </a>
 
           <div className="flex items-center gap-3">
+            <Link
+              to="/blog"
+              aria-label={t.nav.blog}
+              title={t.nav.blog}
+              className={`group relative inline-flex h-[42px] w-[42px] items-center justify-center gap-2 rounded-full border transition sm:w-auto sm:px-2 sm:pr-4 ${
+                isBlog
+                  ? "border-transparent bg-grad text-white shadow-[var(--btn-glow)]"
+                  : "border-line bg-card text-muted hover:border-accent hover:text-accent hover:shadow-card"
+              }`}
+            >
+              <span
+                className={`grid size-[26px] shrink-0 place-items-center rounded-full transition ${
+                  isBlog
+                    ? "bg-white/20 text-white"
+                    : "bg-grad text-white shadow-[var(--btn-glow-sm)] group-hover:scale-110"
+                }`}
+              >
+                <Newspaper size={14} strokeWidth={2.1} aria-hidden="true" />
+              </span>
+              <span
+                className={`hidden text-[0.84rem] font-semibold sm:inline ${
+                  isBlog ? "text-white" : "text-ink"
+                }`}
+              >
+                {t.nav.blog}
+              </span>
+              <span
+                className="absolute -end-0.5 -top-0.5 flex size-2.5 sm:end-1 sm:top-1"
+                aria-hidden="true"
+              >
+                <span
+                  className={`absolute inline-flex size-full animate-ping rounded-full opacity-60 ${
+                    isBlog ? "bg-white/80" : "bg-warm"
+                  }`}
+                />
+                <span
+                  className={`relative inline-flex size-2.5 rounded-full ring-2 ring-card ${
+                    isBlog ? "bg-white" : "bg-warm"
+                  }`}
+                />
+              </span>
+            </Link>
             <LanguageSwitcher />
             <button
               className="grid size-[42px] place-items-center rounded-full border border-line bg-card text-muted transition hover:rotate-12 hover:border-accent hover:text-accent"
@@ -147,7 +193,7 @@ export default function Navbar() {
               href={link.href}
               className={`group relative grid size-[42px] place-items-center rounded-[14px] text-muted transition duration-[280ms] hover:-translate-x-[3px] hover:scale-[1.08] hover:bg-badge hover:text-accent hover:shadow-glow ${
                 isActive
-                  ? "bg-grad text-white shadow-[0_8px_22px_rgba(37,99,235,0.35)] hover:translate-x-0 hover:bg-grad hover:text-white"
+                  ? "bg-grad text-white shadow-[var(--btn-glow)] hover:translate-x-0 hover:bg-grad hover:text-white"
                   : ""
               }`}
               onClick={(e) => handleNavClick(e, link.href)}

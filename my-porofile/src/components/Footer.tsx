@@ -1,10 +1,15 @@
+import type { MouseEvent } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Link2, Code2, Mail } from "lucide-react";
 import { personal } from "../data/personal";
 import { useLanguage } from "../context/LanguageContext";
+import { goToSection } from "../lib/section";
 
 export default function Footer() {
   const year = new Date().getFullYear();
   const { t } = useLanguage();
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const navLinks = [
     { label: t.nav.home, href: "#home" },
@@ -14,7 +19,13 @@ export default function Footer() {
     { label: t.nav.experience, href: "#experience" },
     { label: t.nav.formation, href: "#formation" },
     { label: t.nav.contact, href: "#contact" },
+    { label: t.nav.blog, href: "/blog" },
   ].filter(Boolean);
+
+  const handleSectionClick = (e: MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    goToSection(navigate, location.pathname, href);
+  };
 
   return (
     <footer className="relative overflow-hidden border-t border-line bg-card">
@@ -37,15 +48,26 @@ export default function Footer() {
               {t.footer.navigation}
             </h3>
             <nav className="grid grid-cols-2 gap-x-4 gap-y-2.5" aria-label={t.footer.navigation}>
-              {navLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  className="w-fit text-[0.9rem] text-muted transition hover:translate-x-0.5 hover:text-ink"
-                >
-                  {link.label}
-                </a>
-              ))}
+              {navLinks.map((link) =>
+                link.href === "/blog" ? (
+                  <Link
+                    key={link.href}
+                    to="/blog"
+                    className="w-fit text-[0.9rem] text-muted transition hover:translate-x-0.5 hover:text-ink"
+                  >
+                    {link.label}
+                  </Link>
+                ) : (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    onClick={(e) => handleSectionClick(e, link.href)}
+                    className="w-fit text-[0.9rem] text-muted transition hover:translate-x-0.5 hover:text-ink"
+                  >
+                    {link.label}
+                  </a>
+                )
+              )}
             </nav>
           </div>
 
