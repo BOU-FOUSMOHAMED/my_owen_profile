@@ -12,6 +12,7 @@ export const blog: Record<Lang, BlogData> = {
         slug: "spring-microservices",
         category: "dev",
         date: "Juin 2026",
+        publishedAt: "2026-06-15",
         readTime: "6 min",
         title: "Spring Boot : architecturer des microservices robustes",
         excerpt:
@@ -51,6 +52,7 @@ export const blog: Record<Lang, BlogData> = {
         slug: "rest-api-secure",
         category: "dev",
         date: "Mai 2026",
+        publishedAt: "2026-05-12",
         readTime: "5 min",
         title: "REST APIs : les bonnes pratiques d'un backend sûr",
         excerpt:
@@ -88,6 +90,7 @@ export const blog: Record<Lang, BlogData> = {
         slug: "cicd-actions",
         category: "devops",
         date: "Avril 2026",
+        publishedAt: "2026-04-18",
         readTime: "7 min",
         title: "CI/CD de A à Z avec GitHub Actions",
         excerpt:
@@ -129,6 +132,7 @@ export const blog: Record<Lang, BlogData> = {
         slug: "docker-kubernetes",
         category: "devops",
         date: "Mars 2026",
+        publishedAt: "2026-03-20",
         readTime: "8 min",
         title: "Docker & Kubernetes : conteneuriser sans se brûler",
         excerpt:
@@ -172,6 +176,7 @@ export const blog: Record<Lang, BlogData> = {
         slug: "pentest-web",
         category: "security",
         date: "Février 2026",
+        publishedAt: "2026-02-14",
         readTime: "9 min",
         title: "Initiation au test d'intrusion d'applications web",
         excerpt:
@@ -209,6 +214,7 @@ export const blog: Record<Lang, BlogData> = {
         slug: "spring-security-jwt",
         category: "security",
         date: "Janvier 2026",
+        publishedAt: "2026-01-22",
         readTime: "6 min",
         title: "Spring Security & JWT : une authentification solide",
         excerpt:
@@ -252,6 +258,7 @@ export const blog: Record<Lang, BlogData> = {
         slug: "spring-microservices",
         category: "dev",
         date: "June 2026",
+        publishedAt: "2026-06-15",
         readTime: "6 min",
         title: "Spring Boot: architecting robust microservices",
         excerpt:
@@ -291,6 +298,7 @@ export const blog: Record<Lang, BlogData> = {
         slug: "rest-api-secure",
         category: "dev",
         date: "May 2026",
+        publishedAt: "2026-05-12",
         readTime: "5 min",
         title: "REST APIs: best practices for a safe backend",
         excerpt:
@@ -328,6 +336,7 @@ export const blog: Record<Lang, BlogData> = {
         slug: "cicd-actions",
         category: "devops",
         date: "April 2026",
+        publishedAt: "2026-04-18",
         readTime: "7 min",
         title: "CI/CD from A to Z with GitHub Actions",
         excerpt:
@@ -369,6 +378,7 @@ export const blog: Record<Lang, BlogData> = {
         slug: "docker-kubernetes",
         category: "devops",
         date: "March 2026",
+        publishedAt: "2026-03-20",
         readTime: "8 min",
         title: "Docker & Kubernetes: containerizing without burning out",
         excerpt:
@@ -412,6 +422,7 @@ export const blog: Record<Lang, BlogData> = {
         slug: "pentest-web",
         category: "security",
         date: "February 2026",
+        publishedAt: "2026-02-14",
         readTime: "9 min",
         title: "Getting started with web application penetration testing",
         excerpt:
@@ -449,6 +460,7 @@ export const blog: Record<Lang, BlogData> = {
         slug: "spring-security-jwt",
         category: "security",
         date: "January 2026",
+        publishedAt: "2026-01-22",
         readTime: "6 min",
         title: "Spring Security & JWT: solid authentication",
         excerpt:
@@ -492,6 +504,7 @@ export const blog: Record<Lang, BlogData> = {
         slug: "spring-microservices",
         category: "dev",
         date: "Junio 2026",
+        publishedAt: "2026-06-15",
         readTime: "6 min",
         title: "Spring Boot: arquitecturando microservicios robustos",
         excerpt:
@@ -531,6 +544,7 @@ export const blog: Record<Lang, BlogData> = {
         slug: "rest-api-secure",
         category: "dev",
         date: "Mayo 2026",
+        publishedAt: "2026-05-12",
         readTime: "5 min",
         title: "APIs REST: buenas prácticas para un backend seguro",
         excerpt:
@@ -568,6 +582,7 @@ export const blog: Record<Lang, BlogData> = {
         slug: "cicd-actions",
         category: "devops",
         date: "Abril 2026",
+        publishedAt: "2026-04-18",
         readTime: "7 min",
         title: "CI/CD de principio a fin con GitHub Actions",
         excerpt:
@@ -609,6 +624,7 @@ export const blog: Record<Lang, BlogData> = {
         slug: "docker-kubernetes",
         category: "devops",
         date: "Marzo 2026",
+        publishedAt: "2026-03-20",
         readTime: "8 min",
         title: "Docker y Kubernetes: contenedores sin quemarse",
         excerpt:
@@ -652,6 +668,7 @@ export const blog: Record<Lang, BlogData> = {
         slug: "pentest-web",
         category: "security",
         date: "Febrero 2026",
+        publishedAt: "2026-02-14",
         readTime: "9 min",
         title: "Iniciación al test de intrusión de aplicaciones web",
         excerpt:
@@ -689,6 +706,7 @@ export const blog: Record<Lang, BlogData> = {
         slug: "spring-security-jwt",
         category: "security",
         date: "Enero 2026",
+        publishedAt: "2026-01-22",
         readTime: "6 min",
         title: "Spring Security y JWT: autenticación sólida",
         excerpt:
@@ -732,6 +750,7 @@ export const blog: Record<Lang, BlogData> = {
         slug: "spring-microservices",
         category: "dev",
         date: "يونيو 2026",
+        publishedAt: "2026-06-15",
         readTime: "٦ دقائق",
         title: "Spring Boot: بناء Microservices قوية البنية",
         excerpt:
@@ -771,6 +790,7 @@ export const blog: Record<Lang, BlogData> = {
         slug: "rest-api-secure",
         category: "dev",
         date: "مايو 2026",
+        publishedAt: "2026-05-12",
         readTime: "٥ دقائق",
         title: "واجهات REST: ممارسات أفضل لخلفية آمنة",
         excerpt:
@@ -808,6 +828,7 @@ export const blog: Record<Lang, BlogData> = {
         slug: "cicd-actions",
         category: "devops",
         date: "أبريل 2026",
+        publishedAt: "2026-04-18",
         readTime: "٧ دقائق",
         title: "CI/CD من الألف إلى الياء مع GitHub Actions",
         excerpt:
@@ -849,6 +870,7 @@ export const blog: Record<Lang, BlogData> = {
         slug: "docker-kubernetes",
         category: "devops",
         date: "مارس 2026",
+        publishedAt: "2026-03-20",
         readTime: "٨ دقائق",
         title: "Docker و Kubernetes: حاويات دون حروق",
         excerpt:
@@ -892,6 +914,7 @@ export const blog: Record<Lang, BlogData> = {
         slug: "pentest-web",
         category: "security",
         date: "فبراير 2026",
+        publishedAt: "2026-02-14",
         readTime: "٩ دقائق",
         title: "مقدمة لاختبار الاختراق لتطبيقات الويب",
         excerpt:
@@ -929,6 +952,7 @@ export const blog: Record<Lang, BlogData> = {
         slug: "spring-security-jwt",
         category: "security",
         date: "يناير 2026",
+        publishedAt: "2026-01-22",
         readTime: "٦ دقائق",
         title: "Spring Security و JWT: مصادقة قوية",
         excerpt:
@@ -972,6 +996,7 @@ export const blog: Record<Lang, BlogData> = {
         slug: "spring-microservices",
         category: "dev",
         date: "ⵢⵓⵏⵢⵓ 2026",
+        publishedAt: "2026-06-15",
         readTime: "6 min",
         title: "Spring Boot: ⴰⵙⵏⴼⵓ ⵏ microservices ⵉⵔⵖⴰⵏ",
         excerpt:
@@ -1011,6 +1036,7 @@ export const blog: Record<Lang, BlogData> = {
         slug: "rest-api-secure",
         category: "dev",
         date: "ⵎⴰⵢⵢⵓ 2026",
+        publishedAt: "2026-05-12",
         readTime: "5 min",
         title: "APIs REST: ⵜⵉⵢⴰⴼⵓⵜⵉⵏ ⵉⴼⵓⵍⴽⵉⵏ ⵉ backend ⵉⵥⵉⵍⵏ",
         excerpt:
@@ -1048,6 +1074,7 @@ export const blog: Record<Lang, BlogData> = {
         slug: "cicd-actions",
         category: "devops",
         date: "ⵢⵓⵏⵢⵓ 2026",
+        publishedAt: "2026-04-18",
         readTime: "7 min",
         title: "CI/CD ⵙ GitHub Actions",
         excerpt:
@@ -1089,6 +1116,7 @@ export const blog: Record<Lang, BlogData> = {
         slug: "docker-kubernetes",
         category: "devops",
         date: "ⵎⴰⵔⵙ 2026",
+        publishedAt: "2026-03-20",
         readTime: "8 min",
         title: "Docker ⴷ Kubernetes: ⴰⵙⵏⴽⴰⵙ ⵏ ⵉⵅⵚⴰⵎ ⵙ ⵓⴼⵔⴰⴽ",
         excerpt:
@@ -1132,6 +1160,7 @@ export const blog: Record<Lang, BlogData> = {
         slug: "pentest-web",
         category: "security",
         date: "ⴱⵔⴰⵢⵔ 2026",
+        publishedAt: "2026-02-14",
         readTime: "9 min",
         title: "ⵜⴰⵙⵏⵉⵡⵜ ⵉ ⵓⵎⵣⴰⵔ ⵏ ⵜⵉⵙⵓⵏⴰⵙ ⵏ ⵡⵉⴱ",
         excerpt:
@@ -1169,6 +1198,7 @@ export const blog: Record<Lang, BlogData> = {
         slug: "spring-security-jwt",
         category: "security",
         date: "ⵢⵏⴰⵢⵔ 2026",
+        publishedAt: "2026-01-22",
         readTime: "6 min",
         title: "Spring Security ⴷ JWT: ⵜⴰⵙⵏⴰⵡⵉⵏ ⵜⵉⵅⴰⵜⴰⵔⵉⵏ",
         excerpt: "ⵜⵉⵢⴰⴼⵓⵜⵉⵏ ⵉⴼⵓⵍⴽⵉⵏ ⵉ ⵡⵓⵙⵙⴰⵏ ⵏⵏⴰⴽ: tokens ⵉⵎⵥⴽⴰⵢⵏ, refresh tokens ⴷ ⵓⵙⵏⴼⵍ ⵏ roles.",

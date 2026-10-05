@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect } from "react";
+import { lazy, Suspense, useEffect, useMemo } from "react";
 import { useLocation } from "react-router-dom";
 import Hero from "../components/Hero";
 import TechMarquee from "../components/TechMarquee";
@@ -8,11 +8,19 @@ import Projects from "../components/Projects";
 import Experience from "../components/Experience";
 import Formation from "../components/Formation";
 import Contact from "../components/Contact";
+import { useLanguage } from "../context/LanguageContext";
+import { useSeo } from "../lib/useSeo";
+import { homeMeta, personSchema, webSiteSchema } from "../lib/seo";
 
 const BackToTop = lazy(() => import("../components/BackToTop"));
 
 export default function Portfolio() {
   const location = useLocation();
+  const { lang, t } = useLanguage();
+
+  const meta = useMemo(() => homeMeta(lang, t), [lang, t]);
+  const jsonLd = useMemo(() => [personSchema(lang), webSiteSchema(lang)], [lang]);
+  useSeo(meta, jsonLd);
 
   useEffect(() => {
     const target = (location.state as { scrollTo?: string } | null)?.scrollTo;

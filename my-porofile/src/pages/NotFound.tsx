@@ -1,8 +1,14 @@
+import { useMemo } from "react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext";
+import { useSeo } from "../lib/useSeo";
+import { notFoundMeta } from "../lib/seo";
 
 export default function NotFound() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
+
+  const meta = useMemo(() => notFoundMeta(lang, t), [lang, t]);
+  useSeo(meta);
 
   return (
     <section className="ui-section ui-section--soft" id="notfound">
@@ -20,7 +26,7 @@ export default function NotFound() {
         <p className="mx-auto mt-3 max-w-[34ch] text-[0.95rem] leading-relaxed text-muted">
           {t.notFound.message}
         </p>
-        <Link className="ui-btn ui-btn--primary mt-8 inline-flex" to="/">
+        <Link className="ui-btn ui-btn--primary mt-8 inline-flex" to={`/${lang}`}>
           {t.notFound.backHome} <span aria-hidden="true">←</span>
         </Link>
       </div>

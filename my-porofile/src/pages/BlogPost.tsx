@@ -1,8 +1,10 @@
-import { Fragment, useState } from "react";
+import { Fragment, useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { ArrowLeft, ArrowRight, CalendarDays, Check, Clock3, Code2, Copy, ShieldCheck, Workflow } from "lucide-react";
 import { blog } from "../data/blog";
 import { useLanguage } from "../context/LanguageContext";
+import { useSeo } from "../lib/useSeo";
+import { blogPostingSchema, findPost, notFoundMeta, postMeta } from "../lib/seo";
 import type { BlogBlock, BlogCategory } from "../data/types";
 
 const SECTION_BG = "bg-[#f7f5f0] dark:bg-[#080c15]";
@@ -119,7 +121,14 @@ export default function BlogPost() {
 
   const posts = blog[lang].items;
   const index = posts.findIndex((p) => p.slug === slug);
-  const post = index >= 0 ? posts[index] : null;
+  const post = index >= 0 ? posts[index] : findPost(slug, lang) ?? null;
+
+  const meta = useMemo(
+    () => (post ? postMeta(post, lang) : notFoundMeta(lang, t)),
+    [post, lang, t],
+  );
+  const jsonLd = useMemo(() => (post ? blogPostingSchema(post, lang) : undefined), [post, lang]);
+  useSeo(meta, jsonLd);
 
   if (!post) {
     return (
@@ -128,7 +137,7 @@ export default function BlogPost() {
           <div className="mx-auto max-w-2xl rounded-[16px] border border-dashed border-[#d3c7ae] bg-white/60 px-6 py-20 text-center dark:border-[#2c3d57] dark:bg-[#0c1220]/60">
             <p className="text-[1.05rem] font-semibold text-ink">{t.blog.noResults}</p>
             <Link
-              to="/blog"
+              to={`/${lang}/blog`}
               className="mt-6 inline-flex items-center gap-2.5 rounded-full border border-[#ddd2c0] bg-white px-6 py-3 text-[0.94rem] font-semibold text-ink transition hover:border-[#c5b293] hover:text-[#6b5033] dark:border-[#283850] dark:bg-[#0c1220] dark:hover:border-[#3a4f6d] dark:hover:text-[#c4d4e8]"
             >
               <ArrowLeft size={17} aria-hidden="true" />
@@ -149,7 +158,7 @@ export default function BlogPost() {
       <div className="ui-shell">
         <div className="mx-auto max-w-3xl">
           <Link
-            to="/blog"
+            to={`/${lang}/blog`}
             className="inline-flex items-center gap-2 text-[0.9rem] font-semibold text-[#7a5c3c] transition hover:text-[#6b5033] dark:text-[#a9c0de] dark:hover:text-[#c4d4e8]"
           >
             <ArrowLeft size={16} aria-hidden="true" />
@@ -198,7 +207,7 @@ export default function BlogPost() {
           <div className="mt-12 flex flex-col gap-3 border-t border-dashed border-[#d9cdb4] pt-8 sm:flex-row sm:items-center sm:justify-between dark:border-[#26364d]">
             {prev ? (
               <Link
-                to={`/blog/${prev.slug}`}
+                to={`/${lang}/blog/${prev.slug}`}
                 className="group flex max-w-[45%] flex-col gap-1"
               >
                 <span className="text-[0.72rem] font-bold uppercase tracking-[0.12em] text-[#9b917f] dark:text-[#5f7089]">
@@ -213,7 +222,7 @@ export default function BlogPost() {
             )}
             {next ? (
               <Link
-                to={`/blog/${next.slug}`}
+                to={`/${lang}/blog/${next.slug}`}
                 className="group flex max-w-[45%] flex-col items-end gap-1 text-end"
               >
                 <span className="text-[0.72rem] font-bold uppercase tracking-[0.12em] text-[#9b917f] dark:text-[#5f7089]">

@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 
+    <!--
+      Every self-referencing URL below is rewritten from SITE_URL in
+      src/lib/seo.ts by scripts/generate-seo.mjs, so canonical, Open Graph and
+      sitemap can never drift apart. Change the domain in src/lib/seo.ts only.
+    -->
     <title>MOHAMED BOU-FOUS — Développeur Backend Java Spring Boot &amp; Full Stack</title>
     <meta
       name="description"
@@ -11,15 +16,22 @@
     />
     <meta
       name="keywords"
-      content="backend developer, devloppeur backend, developpeur full stack, développer java, développeur java, java, spring boot, spring security, react, api rest, microservices, docker, kubernetes, ci/cd, postgresql, mysql, mongodb, intelligence artificielle, IA assistant, assistant IA, développeur web, développeur maroc, portfolio développeur"
+      content="développeur backend, développeur full stack, développeur Java, Spring Boot, Spring Security, React, API REST, microservices, Docker, Kubernetes, CI/CD, PostgreSQL, MySQL, MongoDB, intelligence artificielle, portfolio développeur, Agadir, Maroc"
     />
     <meta name="google-site-verification" content="ltFSegyXLopyI5ZRNw58NXRzXlwoaxcinmr8Bh2ZgnA" />
-    
+
     <meta name="author" content="MOHAMED BOU-FOUS" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="googlebot" content="index, follow" />
 
-    <link rel="canonical" href="https://BOU-FOUSMOHAMED.github.io/my_owen_profile/" />
+    <link rel="canonical" href="https://boufousmohamed.vercel.app/fr" />
+
+    <link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr" />
+    <link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en" />
+    <link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es" />
+    <link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar" />
+    <link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam" />
+    <link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr" />
 
     <meta name="geo.region" content="MA" />
     <meta name="geo.placename" content="Agadir" />
@@ -30,8 +42,10 @@
     <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)" />
     <meta name="format-detection" content="telephone=no" />
 
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/webp" href="/profile.webp" />
     <link rel="apple-touch-icon" href="/profile.webp" />
+    <link rel="manifest" href="/manifest.webmanifest" />
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="MOHAMED BOU-FOUS — Développeur Full Stack" />
@@ -40,15 +54,17 @@
       property="og:description"
       content="Développeur backend Java et full stack : API REST, microservices Spring Boot, frontend React, DevOps et intégration d'assistants IA."
     />
-    <meta property="og:url" content="https://BOU-FOUSMOHAMED.github.io/my_owen_profile/" />
+    <meta property="og:url" content="https://boufousmohamed.vercel.app/fr" />
     <meta property="og:locale" content="fr_FR" />
     <meta property="og:locale:alternate" content="en_US" />
     <meta property="og:locale:alternate" content="es_ES" />
     <meta property="og:locale:alternate" content="ar_MA" />
-    <meta property="og:image" content="https://BOU-FOUSMOHAMED.github.io/my_owen_profile/og-image.png" />
+    <meta property="og:locale:alternate" content="zgh_TM" />
+    <meta property="og:image" content="https://boufousmohamed.vercel.app/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Portfolio de MOHAMED BOU-FOUS, développeur full stack Java Spring Boot" />
+    <meta property="og:image:alt" content="MOHAMED BOU-FOUS — Développeur backend Java Spring Boot et full stack, portfolio et articles techniques" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="MOHAMED BOU-FOUS — Développeur Backend Java Spring Boot &amp; Full Stack" />
@@ -56,68 +72,79 @@
       name="twitter:description"
       content="Développeur backend Java et full stack : Spring Boot, React, DevOps et assistants IA."
     />
-    <meta name="twitter:image" content="https://BOU-FOUSMOHAMED.github.io/my_owen_profile/og-image.png" />
-    <meta name="twitter:domain" content="BOU-FOUSMOHAMED.github.io" />
+    <meta name="twitter:image" content="https://boufousmohamed.vercel.app/og-image.png" />
+    <meta name="twitter:image:alt" content="Portfolio de MOHAMED BOU-FOUS, développeur full stack Java Spring Boot" />
 
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "MOHAMED BOU-FOUS",
-        "url": "https://BOU-FOUSMOHAMED.github.io/my_owen_profile/",
-        "image": "https://BOU-FOUSMOHAMED.github.io/my_owen_profile/og-image.png",
-        "jobTitle": "Développeur Full Stack Backend Java Spring Boot",
-        "description": "Développeur backend Java et développeur full stack spécialisé en Java, Spring Boot, API REST, microservices, React et intégration d'assistants IA.",
-        "worksFor": {
-          "@type": "Organization",
-          "name": "FirstFinTech"
-        },
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Agadir",
-          "addressCountry": "MA"
-        },
-        "knowsAbout": [
-          "Backend Java",
-          "Spring Boot",
-          "Spring Security",
-          "Développement Full Stack",
-          "React",
-          "API REST",
-          "Microservices",
-          "DevOps",
-          "Docker",
-          "Kubernetes",
-          "CI/CD",
-          "PostgreSQL",
-          "MySQL",
-          "MongoDB",
-          "Intelligence Artificielle",
-          "Assistants IA"
-        ],
-        "sameAs": [
-          "https://github.com/BOU-FOUSMOHAMED",
-          "https://www.linkedin.com/in/mohamed-bou-fous-00a554330/"
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://boufousmohamed.vercel.app/#person",
+            "name": "MOHAMED BOU-FOUS",
+            "url": "https://boufousmohamed.vercel.app/fr",
+            "image": "https://boufousmohamed.vercel.app/og-image.png",
+            "email": "mailto:boufousmohamed2005@gmail.com",
+            "jobTitle": "Développeur Full Stack Backend Java Spring Boot",
+            "description": "Développeur backend Java et développeur full stack spécialisé en Java, Spring Boot, API REST, microservices, React et intégration d'assistants IA.",
+            "worksFor": { "@type": "Organization", "name": "FirstFinTech" },
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Agadir",
+              "addressCountry": "MA"
+            },
+            "knowsAbout": [
+              "Backend Java",
+              "Spring Boot",
+              "Spring Security",
+              "Développement Full Stack",
+              "React",
+              "API REST",
+              "Microservices",
+              "DevOps",
+              "Docker",
+              "Kubernetes",
+              "CI/CD",
+              "PostgreSQL",
+              "MySQL",
+              "MongoDB",
+              "Tests d'intrusion",
+              "OWASP",
+              "Intelligence Artificielle"
+            ],
+            "knowsLanguage": ["fr", "en", "es", "ar", "zgh"],
+            "sameAs": [
+              "https://github.com/BOU-FOUSMOHAMED",
+              "https://www.linkedin.com/in/mohamed-bou-fous-00a554330/"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://boufousmohamed.vercel.app/#website",
+            "name": "MOHAMED BOU-FOUS — Portfolio Développeur Full Stack",
+            "url": "https://boufousmohamed.vercel.app/fr",
+            "inLanguage": ["fr", "en", "es", "ar", "zgh"],
+            "description": "Portfolio et articles techniques sur le développement backend Java, Spring Boot, DevOps et l'intelligence artificielle.",
+            "author": { "@id": "https://boufousmohamed.vercel.app/#person" },
+            "publisher": { "@id": "https://boufousmohamed.vercel.app/#person" }
+          },
+          {
+            "@type": "Blog",
+            "@id": "https://boufousmohamed.vercel.app/fr/blog#blog",
+            "name": "Articles & réflexions",
+            "url": "https://boufousmohamed.vercel.app/fr/blog",
+            "inLanguage": "fr",
+            "isPartOf": { "@id": "https://boufousmohamed.vercel.app/#website" },
+            "author": { "@id": "https://boufousmohamed.vercel.app/#person" }
+          }
         ]
-      }
-    </script>
-
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "MOHAMED BOU-FOUS — Portfolio Développeur Full Stack",
-        "url": "https://BOU-FOUSMOHAMED.github.io/my_owen_profile/",
-        "inLanguage": ["fr", "en", "es", "ar"],
-        "author": {
-          "@type": "Person",
-          "name": "MOHAMED BOU-FOUS"
-        }
       }
     </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
@@ -125,6 +152,43 @@
   </head>
   <body>
     <div id="root"></div>
+
+    <!--
+      Fallback for crawlers and scrapers that do not execute JavaScript.
+      React replaces the contents of #root on hydration, so this stays inert
+      in a real browser.
+    -->
+    <noscript>
+      <main style="max-width: 46rem; margin: 0 auto; padding: 3rem 1.25rem; font-family: system-ui, sans-serif; line-height: 1.65; color: #1f2937;">
+        <h1 style="font-size: 1.9rem; margin: 0 0 0.5rem;">MOHAMED BOU-FOUS</h1>
+        <p style="margin: 0 0 1.5rem; font-size: 1.1rem; color: #4d7cff; font-weight: 600;">
+          Développeur Backend Java Spring Boot &amp; Full Stack — Agadir, Maroc
+        </p>
+        <p>
+          Développeur backend Java et full stack spécialisé en Spring Boot, API REST,
+          microservices, React, DevOps (Docker, Kubernetes, CI/CD) et intégration
+          d'assistants IA.
+        </p>
+        <h2 style="font-size: 1.25rem; margin-top: 2rem;">Compétences</h2>
+        <p>
+          Java, Spring Boot, Spring Security, API REST, microservices, React, PostgreSQL,
+          MySQL, MongoDB, Docker, Kubernetes, GitHub Actions, XGBoost, FastAPI.
+        </p>
+        <h2 style="font-size: 1.25rem; margin-top: 2rem;">Articles techniques</h2>
+        <ul>
+          <li><a href="/fr/blog/spring-microservices">Spring Boot : architecturer des microservices robustes</a></li>
+          <li><a href="/fr/blog/rest-api-secure">REST APIs : les bonnes pratiques d'un backend sûr</a></li>
+          <li><a href="/fr/blog/cicd-actions">CI/CD de A à Z avec GitHub Actions</a></li>
+          <li><a href="/fr/blog/docker-kubernetes">Docker &amp; Kubernetes : conteneuriser sans se brûler</a></li>
+          <li><a href="/fr/blog/pentest-web">Initiation au test d'intrusion d'applications web</a></li>
+          <li><a href="/fr/blog/spring-security-jwt">Spring Security &amp; JWT : une authentification solide</a></li>
+        </ul>
+        <p style="margin-top: 2rem;">
+          Ce site nécessite JavaScript. <a href="/fr">Version complète</a>.
+        </p>
+      </main>
+    </noscript>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

@@ -1,0 +1,26 @@
+{
+  "name": "MOHAMED BOU-FOUS — Développeur Backend Java Spring Boot & Full Stack",
+  "short_name": "M. BOU-FOUS",
+  "description": "Portfolio et articles techniques sur le développement backend Java, Spring Boot, DevOps et l'intelligence artificielle.",
+  "start_url": "/fr",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0b1220",
+  "theme_color": "#0b1220",
+  "lang": "fr",
+  "dir": "auto",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/profile.webp",
+      "sizes": "any",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    }
+  ]
+}

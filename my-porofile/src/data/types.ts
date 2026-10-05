@@ -77,6 +77,8 @@ export interface BlogPost {
   slug: string;
   category: BlogCategory;
   date: string;
+  /** ISO-8601 date. Required by Article/BlogPosting structured data. */
+  publishedAt: string;
   readTime: string;
   title: string;
   excerpt: string;

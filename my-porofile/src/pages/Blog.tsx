@@ -14,6 +14,8 @@ import {
 } from "lucide-react";
 import { blog } from "../data/blog";
 import { useLanguage } from "../context/LanguageContext";
+import { useSeo } from "../lib/useSeo";
+import { blogIndexMeta, blogIndexSchema } from "../lib/seo";
 import type { BlogCategory } from "../data/types";
 
 type Filter = "all" | BlogCategory;
@@ -78,6 +80,10 @@ export default function Blog() {
   const [filter, setFilter] = useState<Filter>("all");
   const [query, setQuery] = useState("");
   const [page, setPage] = useState(1);
+
+  const meta = useMemo(() => blogIndexMeta(lang, t), [lang, t]);
+  const jsonLd = useMemo(() => blogIndexSchema(lang), [lang]);
+  useSeo(meta, jsonLd);
 
   const posts = blog[lang].items;
 
@@ -186,7 +192,7 @@ export default function Blog() {
               return (
                 <Link
                   key={post.slug}
-                  to={`/blog/${post.slug}`}
+                  to={`/${lang}/blog/${post.slug}`}
                   className={`reveal group flex flex-col gap-4 rounded-[16px] border p-[24px] shadow-[0_2px_10px_rgba(120,105,80,0.06)] transition hover:-translate-y-1 ${THEME_CLASSES.card} ${THEME_CLASSES.cardHover}`}
                   style={{ transitionDelay: `${(index % 3) * 60}ms` }}
                 >
@@ -275,10 +281,10 @@ export default function Blog() {
         )}
 
         <div className="mt-14 flex justify-center">
-          <Link
-            to="/"
-            className="inline-flex items-center gap-2.5 rounded-full border border-[#ddd2c0] bg-white px-6 py-3 text-[0.94rem] font-semibold text-ink transition hover:border-[#c5b293] hover:text-[#6b5033] dark:border-[#283850] dark:bg-[#0c1220] dark:hover:border-[#3a4f6d] dark:hover:text-[#c4d4e8]"
-          >
+<Link
+              to={`/${lang}`}
+              className="inline-flex items-center gap-2.5 rounded-full border border-[#ddd2c0] bg-white px-6 py-3 text-[0.94rem] font-semibold text-ink transition hover:border-[#c5b293] hover:text-[#6b5033] dark:border-[#283850] dark:bg-[#0c1220] dark:hover:border-[#3a4f6d] dark:hover:text-[#c4d4e8]"
+            >
             <ArrowLeft size={17} aria-hidden="true" />
             {t.blog.back}
           </Link>

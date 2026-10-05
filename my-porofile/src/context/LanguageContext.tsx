@@ -1,14 +1,17 @@
 import {
   createContext,
+  useCallback,
   useContext,
   useEffect,
-  useState,
+  useMemo,
   type ReactNode,
 } from "react";
-import { dictionaries, isRtl, type Lang, type Translation } from "../i18n";
+import { Outlet, useLocation, useNavigate } from "react-router-dom";
+import { dictionaries, isRtl, isSupportedLang, type Lang, type Translation } from "../i18n";
 
 interface LanguageContextValue {
   lang: Lang;
+  /** Navigates to the same page in another language (URL-based, crawlable). */
   setLang: (lang: Lang) => void;
   t: Translation;
 }
@@ -19,23 +22,61 @@ const LanguageContext = createContext<LanguageContextValue>({
   t: dictionaries.fr,
 });
 
-export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [lang, setLangState] = useState<Lang>(() => {
-    const saved = localStorage.getItem("lang");
-    return saved && saved in dictionaries ? (saved as Lang) : "fr";
-  });
+const isLang = isSupportedLang;
+
+export { isSupportedLang };
+
+/** Reads the language from the first URL segment: `/en/blog` -> `en`. */
+export function langFromPathname(pathname: string): Lang | null {
+  const segment = pathname.split("/").filter(Boolean)[0];
+  return isLang(segment) ? segment : null;
+}
+
+/** Replaces the language segment, keeping the rest of the path untouched. */
+export function swapLangInPathname(pathname: string, next: Lang): string {
+  const segments = pathname.split("/").filter(Boolean);
+  if (isLang(segments[0])) segments[0] = next;
+  else segments.unshift(next);
+  return `/${segments.join("/")}`;
+}
+
+function detectPreferredLang(): Lang {
+  if (typeof window === "undefined") return "fr";
+  const stored: string | undefined = window.localStorage.getItem("lang") ?? undefined;
+  if (isLang(stored)) return stored;
+  const [browser] = window.navigator.language.split("-");
+  return isLang(browser) ? browser : "fr";
+}
+
+export function LanguageProvider({ children }: { children?: ReactNode }) {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const urlLang = langFromPathname(location.pathname);
+  const lang = urlLang ?? detectPreferredLang();
 
   useEffect(() => {
-    localStorage.setItem("lang", lang);
+    window.localStorage.setItem("lang", lang);
     document.documentElement.setAttribute("lang", lang);
     document.documentElement.dir = isRtl(lang) ? "rtl" : "ltr";
   }, [lang]);
 
-  const setLang = (next: Lang) => setLangState(next);
+  const setLang = useCallback(
+    (next: Lang) => {
+      window.localStorage.setItem("lang", next);
+      navigate(swapLangInPathname(location.pathname, next) + location.search);
+    },
+    [location.pathname, location.search, navigate],
+  );
+
+  const value = useMemo<LanguageContextValue>(
+    () => ({ lang, setLang, t: dictionaries[lang] }),
+    [lang, setLang],
+  );
 
   return (
-    <LanguageContext.Provider value={{ lang, setLang, t: dictionaries[lang] }}>
-      {children}
+    <LanguageContext.Provider value={value}>
+      {children ?? <Outlet />}
     </LanguageContext.Provider>
   );
 }

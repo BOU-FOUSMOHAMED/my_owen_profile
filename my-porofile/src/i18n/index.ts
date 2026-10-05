@@ -31,5 +31,8 @@ export const dictionaries: Record<Lang, Translation> = {
 
 export const isRtl = (lang: Lang) => lang === "ar";
 
+export const isSupportedLang = (value: string | undefined): value is Lang =>
+  !!value && (LANGUAGE_OPTIONS.some((option) => option.code === value));
+
 export type { Translation };
 export { fr, en, es, ar, tam };

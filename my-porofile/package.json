@@ -3,10 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://BOU-FOUSMOHAMED.github.io/my_owen_profile/",
+  "homepage": "https://boufousmohamed.vercel.app",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "seo": "node scripts/generate-seo.mjs",
+    "test:seo": "node scripts/test-seo.mjs",
+    "build": "npm run seo && tsc -b && vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"

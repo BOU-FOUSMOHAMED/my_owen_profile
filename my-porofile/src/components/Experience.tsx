@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { lazy, Suspense, useState } from "react";
 import { Briefcase, MapPin, Calendar, Building2, Cpu, Workflow } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
 import { experience } from "../data/experience";
-import ExperienceModal from "./ExperienceModal";
+
+const ExperienceModal = lazy(() => import("./ExperienceModal"));
 
 export default function Experience() {
   const { t, lang } = useLanguage();
@@ -97,11 +98,13 @@ export default function Experience() {
       </div>
 
       {open && (
-        <ExperienceModal
-          items={items}
-          t={t.experience}
-          onClose={() => setOpen(false)}
-        />
+        <Suspense fallback={null}>
+          <ExperienceModal
+            items={items}
+            t={t.experience}
+            onClose={() => setOpen(false)}
+          />
+        </Suspense>
       )}
     </section>
   );

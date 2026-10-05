@@ -1,19 +1,35 @@
-import { useState, type KeyboardEvent } from "react";
+import { lazy, Suspense, useEffect, useState, type KeyboardEvent } from "react";
 import { useLanguage } from "../context/LanguageContext";
 import { projects } from "../data/projects";
-import { projectSchema } from "../data/projectSchema";
-import ProjectModal from "./ProjectModal";
+import type { ProjectPhase } from "../data/types";
 import { GitBranch, ExternalLink, Workflow } from "lucide-react";
+
+// The architecture schema is ~50 kB of text across 5 languages: only load it
+// when a modal is actually opened, so it never blocks first paint (LCP).
+const ProjectModal = lazy(() => import("./ProjectModal"));
 
 export default function Projects() {
   const { t, lang } = useLanguage();
   const { label, title, intro, featuredBadge, links, architectureBtn } = t.projects;
   const items = projects[lang].items;
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+  const [selectedPhases, setSelectedPhases] = useState<ProjectPhase[]>([]);
 
   const selected = selectedIndex !== null ? items[selectedIndex] : undefined;
-  const selectedPhases =
-    selected && selectedIndex !== null ? (projectSchema[lang][selected.title] ?? []) : [];
+
+  useEffect(() => {
+    if (!selected || selectedIndex === null) {
+      setSelectedPhases([]);
+      return;
+    }
+    let cancelled = false;
+    import("../data/projectSchema").then(({ projectSchema }) => {
+      if (!cancelled) setSelectedPhases(projectSchema[lang][selected.title] ?? []);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [selected, selectedIndex, lang]);
 
   return (
     <section className="ui-section ui-section--soft" id="projects">
@@ -132,13 +148,15 @@ export default function Projects() {
       </div>
 
       {selected && selectedIndex !== null && (
-        <ProjectModal
-          project={selected}
-          index={selectedIndex}
-          phases={selectedPhases}
-          t={t.projects}
-          onClose={() => setSelectedIndex(null)}
-        />
+        <Suspense fallback={null}>
+          <ProjectModal
+            project={selected}
+            index={selectedIndex}
+            phases={selectedPhases}
+            t={t.projects}
+            onClose={() => setSelectedIndex(null)}
+          />
+        </Suspense>
       )}
     </section>
   );

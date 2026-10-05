@@ -7,7 +7,7 @@ import { goToSection } from "../lib/section";
 
 export default function Footer() {
   const year = new Date().getFullYear();
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -19,7 +19,7 @@ export default function Footer() {
     { label: t.nav.experience, href: "#experience" },
     { label: t.nav.formation, href: "#formation" },
     { label: t.nav.contact, href: "#contact" },
-    { label: t.nav.blog, href: "/blog" },
+    { label: t.nav.blog, href: "blog" },
   ].filter(Boolean);
 
   const handleSectionClick = (e: MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -49,10 +49,10 @@ export default function Footer() {
             </h3>
             <nav className="grid grid-cols-2 gap-x-4 gap-y-2.5" aria-label={t.footer.navigation}>
               {navLinks.map((link) =>
-                link.href === "/blog" ? (
+                link.href === "blog" ? (
                   <Link
                     key={link.href}
-                    to="/blog"
+                    to={`/${lang}/blog`}
                     className="w-fit text-[0.9rem] text-muted transition hover:translate-x-0.5 hover:text-ink"
                   >
                     {link.label}

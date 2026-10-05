@@ -1,9 +1,484 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://BOU-FOUSMOHAMED.github.io/my_owen_profile/</loc>
-    <lastmod>2025-09-14</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://boufousmohamed.vercel.app/fr</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/en</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/es</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/ar</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/tam</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/fr/blog</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr/blog"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es/blog"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar/blog"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr/blog"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/en/blog</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr/blog"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es/blog"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar/blog"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr/blog"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/es/blog</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr/blog"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es/blog"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar/blog"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr/blog"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/ar/blog</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr/blog"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es/blog"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar/blog"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr/blog"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/tam/blog</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr/blog"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es/blog"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar/blog"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr/blog"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/fr/blog/spring-microservices</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr/blog/spring-microservices"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en/blog/spring-microservices"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es/blog/spring-microservices"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar/blog/spring-microservices"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam/blog/spring-microservices"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr/blog/spring-microservices"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/fr/blog/rest-api-secure</loc>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr/blog/rest-api-secure"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en/blog/rest-api-secure"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es/blog/rest-api-secure"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar/blog/rest-api-secure"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam/blog/rest-api-secure"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr/blog/rest-api-secure"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/fr/blog/cicd-actions</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr/blog/cicd-actions"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en/blog/cicd-actions"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es/blog/cicd-actions"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar/blog/cicd-actions"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam/blog/cicd-actions"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr/blog/cicd-actions"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/fr/blog/docker-kubernetes</loc>
+    <lastmod>2026-03-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr/blog/docker-kubernetes"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en/blog/docker-kubernetes"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es/blog/docker-kubernetes"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar/blog/docker-kubernetes"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam/blog/docker-kubernetes"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr/blog/docker-kubernetes"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/fr/blog/pentest-web</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr/blog/pentest-web"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en/blog/pentest-web"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es/blog/pentest-web"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar/blog/pentest-web"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam/blog/pentest-web"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr/blog/pentest-web"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/fr/blog/spring-security-jwt</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr/blog/spring-security-jwt"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en/blog/spring-security-jwt"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es/blog/spring-security-jwt"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar/blog/spring-security-jwt"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam/blog/spring-security-jwt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr/blog/spring-security-jwt"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/en/blog/spring-microservices</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr/blog/spring-microservices"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en/blog/spring-microservices"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es/blog/spring-microservices"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar/blog/spring-microservices"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam/blog/spring-microservices"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr/blog/spring-microservices"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/en/blog/rest-api-secure</loc>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr/blog/rest-api-secure"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en/blog/rest-api-secure"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es/blog/rest-api-secure"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar/blog/rest-api-secure"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam/blog/rest-api-secure"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr/blog/rest-api-secure"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/en/blog/cicd-actions</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr/blog/cicd-actions"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en/blog/cicd-actions"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es/blog/cicd-actions"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar/blog/cicd-actions"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam/blog/cicd-actions"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr/blog/cicd-actions"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/en/blog/docker-kubernetes</loc>
+    <lastmod>2026-03-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr/blog/docker-kubernetes"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en/blog/docker-kubernetes"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es/blog/docker-kubernetes"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar/blog/docker-kubernetes"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam/blog/docker-kubernetes"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr/blog/docker-kubernetes"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/en/blog/pentest-web</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr/blog/pentest-web"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en/blog/pentest-web"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es/blog/pentest-web"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar/blog/pentest-web"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam/blog/pentest-web"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr/blog/pentest-web"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/en/blog/spring-security-jwt</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr/blog/spring-security-jwt"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en/blog/spring-security-jwt"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es/blog/spring-security-jwt"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar/blog/spring-security-jwt"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam/blog/spring-security-jwt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr/blog/spring-security-jwt"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/es/blog/spring-microservices</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr/blog/spring-microservices"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en/blog/spring-microservices"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es/blog/spring-microservices"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar/blog/spring-microservices"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam/blog/spring-microservices"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr/blog/spring-microservices"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/es/blog/rest-api-secure</loc>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr/blog/rest-api-secure"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en/blog/rest-api-secure"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es/blog/rest-api-secure"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar/blog/rest-api-secure"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam/blog/rest-api-secure"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr/blog/rest-api-secure"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/es/blog/cicd-actions</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr/blog/cicd-actions"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en/blog/cicd-actions"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es/blog/cicd-actions"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar/blog/cicd-actions"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam/blog/cicd-actions"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr/blog/cicd-actions"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/es/blog/docker-kubernetes</loc>
+    <lastmod>2026-03-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr/blog/docker-kubernetes"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en/blog/docker-kubernetes"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es/blog/docker-kubernetes"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar/blog/docker-kubernetes"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam/blog/docker-kubernetes"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr/blog/docker-kubernetes"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/es/blog/pentest-web</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr/blog/pentest-web"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en/blog/pentest-web"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es/blog/pentest-web"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar/blog/pentest-web"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam/blog/pentest-web"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr/blog/pentest-web"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/es/blog/spring-security-jwt</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr/blog/spring-security-jwt"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en/blog/spring-security-jwt"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es/blog/spring-security-jwt"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar/blog/spring-security-jwt"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam/blog/spring-security-jwt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr/blog/spring-security-jwt"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/ar/blog/spring-microservices</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr/blog/spring-microservices"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en/blog/spring-microservices"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es/blog/spring-microservices"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar/blog/spring-microservices"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam/blog/spring-microservices"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr/blog/spring-microservices"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/ar/blog/rest-api-secure</loc>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr/blog/rest-api-secure"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en/blog/rest-api-secure"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es/blog/rest-api-secure"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar/blog/rest-api-secure"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam/blog/rest-api-secure"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr/blog/rest-api-secure"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/ar/blog/cicd-actions</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr/blog/cicd-actions"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en/blog/cicd-actions"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es/blog/cicd-actions"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar/blog/cicd-actions"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam/blog/cicd-actions"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr/blog/cicd-actions"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/ar/blog/docker-kubernetes</loc>
+    <lastmod>2026-03-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr/blog/docker-kubernetes"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en/blog/docker-kubernetes"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es/blog/docker-kubernetes"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar/blog/docker-kubernetes"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam/blog/docker-kubernetes"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr/blog/docker-kubernetes"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/ar/blog/pentest-web</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr/blog/pentest-web"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en/blog/pentest-web"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es/blog/pentest-web"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar/blog/pentest-web"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam/blog/pentest-web"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr/blog/pentest-web"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/ar/blog/spring-security-jwt</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr/blog/spring-security-jwt"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en/blog/spring-security-jwt"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es/blog/spring-security-jwt"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar/blog/spring-security-jwt"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam/blog/spring-security-jwt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr/blog/spring-security-jwt"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/tam/blog/spring-microservices</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr/blog/spring-microservices"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en/blog/spring-microservices"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es/blog/spring-microservices"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar/blog/spring-microservices"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam/blog/spring-microservices"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr/blog/spring-microservices"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/tam/blog/rest-api-secure</loc>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr/blog/rest-api-secure"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en/blog/rest-api-secure"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es/blog/rest-api-secure"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar/blog/rest-api-secure"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam/blog/rest-api-secure"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr/blog/rest-api-secure"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/tam/blog/cicd-actions</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr/blog/cicd-actions"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en/blog/cicd-actions"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es/blog/cicd-actions"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar/blog/cicd-actions"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam/blog/cicd-actions"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr/blog/cicd-actions"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/tam/blog/docker-kubernetes</loc>
+    <lastmod>2026-03-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr/blog/docker-kubernetes"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en/blog/docker-kubernetes"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es/blog/docker-kubernetes"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar/blog/docker-kubernetes"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam/blog/docker-kubernetes"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr/blog/docker-kubernetes"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/tam/blog/pentest-web</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr/blog/pentest-web"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en/blog/pentest-web"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es/blog/pentest-web"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar/blog/pentest-web"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam/blog/pentest-web"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr/blog/pentest-web"/>
+  </url>
+  <url>
+    <loc>https://boufousmohamed.vercel.app/tam/blog/spring-security-jwt</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://boufousmohamed.vercel.app/fr/blog/spring-security-jwt"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boufousmohamed.vercel.app/en/blog/spring-security-jwt"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://boufousmohamed.vercel.app/es/blog/spring-security-jwt"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://boufousmohamed.vercel.app/ar/blog/spring-security-jwt"/>
+    <xhtml:link rel="alternate" hreflang="zgh" href="https://boufousmohamed.vercel.app/tam/blog/spring-security-jwt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boufousmohamed.vercel.app/fr/blog/spring-security-jwt"/>
   </url>
 </urlset>

@@ -34,10 +34,11 @@ export default function Navbar() {
   const [active, setActive] = useState("#home");
   const [scrollProgress, setScrollProgress] = useState(0);
   const { theme, toggleTheme } = useTheme();
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const location = useLocation();
   const navigate = useNavigate();
-  const isBlog = location.pathname === "/blog";
+  const blogBase = `/${lang}/blog`;
+  const isBlog = location.pathname === blogBase || location.pathname.startsWith(`${blogBase}/`);
   
 
   const navLinks: NavLinkItem[] = [
@@ -157,7 +158,7 @@ export default function Navbar() {
 
             <div className="flex items-center gap-2 sm:gap-3">
             <Link
-              to="/blog"
+              to={`/${lang}/blog`}
               aria-label={t.nav.blog}
               title={t.nav.blog}
               className={`group relative inline-flex h-[42px] w-[42px] items-center justify-center gap-2 overflow-hidden rounded-full border transition-all duration-300 sm:w-auto sm:px-3 sm:pr-4 ${
