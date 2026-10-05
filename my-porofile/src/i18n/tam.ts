@@ -13,6 +13,7 @@ export const tam: Translation = {
     formation: "ⴰⵙⴻⵍⵎⴻⴷ",
     contact: "ⴽⵓⵏⵜⴰⴽⵜ",
     blog: "ⴰⴱⵍⵓⴳ",
+    live: "ⴰⵎⵓⴷⵓⵏⵜ",
   },
   theme: {
     toDark: "ⵖⴻⵔ ⴰⵙⴻⴽⴽⵉⵍ ⵉⴱⴻⵔⴽⴰⵏ",
@@ -191,5 +192,11 @@ export const tam: Translation = {
     prev: "ⴰⵙⴻⴱⵜⴻⵔ ⴰⵣⵉⴽ",
     next: "ⴰⵙⴻⴱⵜⴻⵔ ⴰⴷⴷⵓⴽ",
     publishedOn: "ⵢⴻⵜⵜⵡⴰⴳⴰⴷ ⵖ",
+  },
+  live: {
+    label: "ⴰⵎⵓⴷⵓⵏⵜ ⴷⵉⵖⵜ",
+    title: "ⴰⵎⵓⴷⵓⵏⵜ",
+    intro: "ⵣⵣⵓ ⴰⵎⵓⴷⵓⵏⵜ ⵏⵏⴰⵜ ⵖⵔⵜⴰⵏⵜ ⴷⴻⴳⵏ.",
+    back: "ⵖⴻⵔ ⵜⴰⵏⴼⴰⵍⵓⵜ",
   },
 };

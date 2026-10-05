@@ -4,6 +4,7 @@ import App from "./App";
 import Portfolio from "./pages/Portfolio";
 import NotFound from "./pages/NotFound";
 
+
 const Blog = lazy(() => import("./pages/Blog"));
 const BlogPost = lazy(() => import("./pages/BlogPost"));
 
@@ -20,6 +21,7 @@ export const router = createHashRouter([
       { index: true, element: <Portfolio /> },
       { path: "blog", element: <Suspense fallback={pageFallback}><Blog /></Suspense> },
       { path: "blog/:slug", element: <Suspense fallback={pageFallback}><BlogPost /></Suspense> },
+     
       { path: "*", element: <NotFound /> },
     ],
   },

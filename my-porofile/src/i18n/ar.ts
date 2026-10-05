@@ -13,6 +13,7 @@ export const ar: Translation = {
     formation: "التكوين",
     contact: "التواصل",
     blog: "المدونة",
+    live: "مباشر",
   },
   theme: {
     toDark: "التبديل إلى الوضع الداكن",
@@ -191,5 +192,11 @@ export const ar: Translation = {
     prev: "الصفحة السابقة",
     next: "الصفحة التالية",
     publishedOn: "نُشر في",
+  },
+  live: {
+    label: "بث مباشر",
+    title: "البث المباشر",
+    intro: "شاهد البث المباشر أدناه.",
+    back: "العودة إلى الرئيسية",
   },
 };

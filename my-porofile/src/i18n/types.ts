@@ -22,6 +22,7 @@ export interface Translation {
     formation: string;
     contact: string;
     blog: string;
+    live: string;
   };
   theme: {
     toDark: string;
@@ -153,5 +154,11 @@ export interface Translation {
     prev: string;
     next: string;
     publishedOn: string;
+  };
+  live: {
+    label: string;
+    title: string;
+    intro: string;
+    back: string;
   };
 }

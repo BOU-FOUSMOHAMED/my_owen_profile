@@ -13,6 +13,7 @@ export const en: Translation = {
     formation: "Education",
     contact: "Contact",
     blog: "Blog",
+    live: "Live",
   },
   theme: {
     toDark: "Switch to dark mode",
@@ -192,5 +193,11 @@ export const en: Translation = {
     prev: "Previous page",
     next: "Next page",
     publishedOn: "Published on",
+  },
+  live: {
+    label: "LIVE BROADCAST",
+    title: "Live stream",
+    intro: "Watch the live broadcast below.",
+    back: "Back to home",
   },
 };

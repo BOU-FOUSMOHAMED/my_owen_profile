@@ -13,6 +13,7 @@ export const es: Translation = {
     formation: "Formación",
     contact: "Contacto",
     blog: "Blog",
+    live: "Directo",
   },
   theme: {
     toDark: "Cambiar a modo oscuro",
@@ -192,5 +193,11 @@ export const es: Translation = {
     prev: "Página anterior",
     next: "Página siguiente",
     publishedOn: "Publicado el",
+  },
+  live: {
+    label: "DIRECTO EN VIVO",
+    title: "Transmisión en directo",
+    intro: "Mira la transmisión en directo a continuación.",
+    back: "Volver al inicio",
   },
 };
