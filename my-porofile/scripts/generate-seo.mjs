@@ -164,6 +164,32 @@ for (const legacy of LEGACY_URLS) {
   if (legacy !== SITE_URL) index = index.split(legacy).join(SITE_URL);
 }
 
+/**
+ * Icon links are normalised here rather than trusted in the markup:
+ * every href must stay absolute (a relative one 404s on /fr/blog/<post>),
+ * and the SVG declaration must point at the .svg, never at the .webp —
+ * a MIME mismatch browsers silently ignore. Kept in sync with
+ * public/manifest.webmanifest.
+ */
+const ICON_LINKS = [
+  '    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />',
+  '    <link rel="icon" type="image/webp" href="/profile.webp" />',
+  '    <link rel="apple-touch-icon" href="/profile.webp" />',
+  '    <link rel="manifest" href="/manifest.webmanifest" />',
+];
+
+const ICON_RE = /[ \t]*<link rel="(?:icon|apple-touch-icon|manifest)"[^>]*>[ \t]*\r?\n?/g;
+index = index.replace(ICON_RE, "");
+
+// Collapse the blank lines the removal left behind, so repeated builds converge.
+index = index.replace(/\n{3,}/g, "\n\n");
+
+const OG_ANCHOR = /(\n)([ \t]*)(<meta property="og:type")/;
+if (!OG_ANCHOR.test(index)) {
+  throw new Error('index.html: no <meta property="og:type"> anchor - cannot place icon links');
+}
+index = index.replace(OG_ANCHOR, (_, nl, indent, meta) => `${nl}${ICON_LINKS.join(nl)}${nl}${nl}${indent}${meta}`);
+
 if (index === before) {
   console.log("[seo] index.html already in sync");
 } else {
@@ -172,7 +198,7 @@ if (index === before) {
     throw new Error("index.html rewrite dropped a sameAs link - aborting");
   }
   writeFileSync(INDEX, index, "utf8");
-  console.log("[seo] index.html self-referencing URLs synced to SITE_URL");
+  console.log("[seo] index.html self-referencing URLs + icon links synced to SITE_URL");
 }
 
 console.log(
